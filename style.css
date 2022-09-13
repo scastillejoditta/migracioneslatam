@@ -1,0 +1,174 @@
+
+.cls-1{
+    opacity:.12;
+    fill:#000;
+    animation: Latam .8s 10s ease 1 forwards;
+}
+
+@keyframes Latam
+{
+   from {
+    fill:transparent;
+    stroke:#000;
+    stroke-width: 4px;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+   }
+    to {
+        stroke-dashoffset: 0;
+      }
+}
+
+
+
+.cls-4
+{
+    fill:transparent;
+    stroke:#e34038;
+    stroke-width: 15px;
+    stroke-dasharray: 750;
+    stroke-dashoffset: 750;
+    animation: muro .8s 8.5s ease 1 forwards;
+}
+
+@keyframes muro
+{
+    to {
+        stroke-dashoffset: 400;
+      }
+}
+
+@keyframes aparecer 
+{
+    0% {
+        opacity: 0;
+      }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes parpadear
+{
+    0% {
+        opacity: 1;
+      }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+      }
+}
+
+@keyframes cerrar_pais
+{
+    0% {
+        fill:#000;
+        opacity: .12;
+      }
+    100% {
+        fill:#d5f84a;
+        opacity: 1;
+    }
+}
+
+.cls-5 {
+    fill:#000;
+    opacity: .12;
+    animation: cerrar_pais .8s 9.5s ease 1 forwards;
+}
+
+/* puntos */
+.cls-6 {
+    fill:#d5f84a;
+    opacity:0;
+    cursor: pointer;
+}
+
+/* .darien {animation: aparecer .5s 1.5s ease 1 forwards;}
+.sanandres {animation: aparecer .5s 5s ease 1 forwards;}
+.riobravo {animation: aparecer .2s 9.5s ease 1 forwards;} */
+
+.darien {animation: parpadear 3s 1.5s infinite;}
+.sanandres {animation: parpadear 3s 4.5s infinite;}
+.riobravo {animation: parpadear 3s 10.5s  infinite;}
+
+@keyframes marcar_punto 
+{
+    0% {
+        transform: scale(0);
+      }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.cls-8{
+    
+    fill:#0c4ed3;
+    opacity: 0;
+    animation: aparecer 2s 13.5s ease 2 forwards;}
+
+.cls-6,.cls-10{
+    stroke:#fff;
+    stroke-miterlimit:10;
+    stroke-width:4px;    
+}
+
+/* flechas */
+
+.cls-10 {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+
+.f1 {animation: migrar 1s 0s ease 1 forwards;}
+.p1 {animation: migrar 1s 1s ease 1 forwards;}
+
+.f2 {animation: migrar 1s 3s ease 1 forwards;}
+.p2 {animation: migrar 1s 4s ease 1 forwards;}
+
+.f3 {animation: migrar 1s 3s ease 1 forwards;}
+.p3 {animation: migrar 1s 4s ease 1 forwards;}
+
+.f4 {animation: migrar 1s 6s ease 1 forwards;}
+.p4 {animation: migrar 1s 6.5s ease 1 forwards;}
+
+.f5 {animation: migrar 1s 6s ease 1 forwards;}
+.p5 {animation: migrar 1s 6.5s ease 1 forwards;}
+
+.f6 {animation: migrar 1s 7s ease 1 forwards;}
+.p6 {animation: migrar 1s 7.5s ease 1 forwards;}
+
+.f7 {animation: migrar 1s 8s ease 1 forwards;}
+.p7 {animation: migrar 1s 8.5s ease 1 forwards;}
+
+.f8 {animation: migrar 1s 11s ease 1 forwards;}
+.p8 {animation: migrar 1s 11.5s ease 1 forwards;}
+
+.f9 {animation: migrar 1s 12s ease 1 forwards;}
+.p9 {animation: migrar 1s 12.5s ease 1 forwards;}
+
+@keyframes migrar
+{
+    to {
+        stroke-dashoffset: 400;
+      }
+}
+
+.cls-11{mix-blend-mode:multiply;}
+
+.cls-10{fill:none;stroke-linecap:round;}
+
+.cls-8,.cls-12{fill-rule:evenodd;}
+
+
+.cls-12 { fill:#d6fa48; opacity: 0; }
+.cls-2 { fill:#0048d8; opacity: 0; }
+.cls-3 { fill:#d8fc3f; opacity: 0; }
+.cls-7 { fill:#0c4ed3; opacity: 0; }
+
+svg
+{background-color: #18a477;}
