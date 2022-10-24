@@ -1,0 +1,33 @@
+{
+  "name": "flujos_migratorios_latam",
+  "version": "1.0.0",
+  "description": "Mapa de América con las principales rutas de migración regular e irregular al norte y al sur.",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scastillejoditta/migracioneslatam.git"
+  },
+  "keywords": [
+    "migration",
+    "flows",
+    "latam",
+    "venezuela",
+    "EEUU",
+    "Darién",
+    "Puentes",
+    "de",
+    "comunicación"
+  ],
+  "author": "Sara Castillejo Ditta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scastillejoditta/migracioneslatam/issues"
+  },
+  "homepage": "https://github.com/scastillejoditta/migracioneslatam#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
