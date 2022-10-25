@@ -115,7 +115,8 @@ svg {
   .card-body {
     width: 100%;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    background-color: transparent; }
   .card-title {
     font-family: 'titulos', sans-serif;
     color: #0584ff;
