@@ -1,15 +1,15 @@
 /* fuentes locales*/
 @font-face {
   font-family: 'texto';
-  src: url("/assets/fonts/Mohave/mohave.regular.ttf"); }
+  src: url("../assets/fonts/Mohave/mohave.regular.ttf"); }
 
 @font-face {
   font-family: 'titulos';
-  src: url("/assets/fonts/Mohave/mohave.bold.ttf"); }
+  src: url("../assets/fonts/Mohave/mohave.bold.ttf"); }
 
 @font-face {
   font-family: 'leyenda';
-  src: url("/assets/fonts/Mohave/mohave.light.ttf"); }
+  src: url("../assets/fonts/Mohave/mohave.light.ttf"); }
 
 /* -------------*/
 /* colores */
