@@ -103,15 +103,16 @@ svg {
     position: relative; }
     .card__header-tag {
       display: inline-block;
-      height: 30px;
+      height: 20px;
       font-family: 'leyenda', sans-serif;
       background-color: #d6fa48;
       padding: 0 5px 2px 5px;
       margin: 0;
       position: absolute;
-      right: 0;
-      top: 0;
-      color: #0584ff; }
+      left: 0;
+      bottom: 0;
+      color: #0584ff;
+      font-size: 0.8em; }
   .card-body {
     width: 100%;
     padding: 0;
