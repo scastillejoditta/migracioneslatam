@@ -1,0 +1,31 @@
+
+/* fuentes locales*/
+
+@font-face {
+    font-family: 'texto';
+    src: url('/assets/fonts/Mohave/mohave.regular.ttf');
+}
+
+@font-face {
+    font-family: 'titulos';
+    src: url('/assets/fonts/Mohave/mohave.bold.ttf');
+}
+
+@font-face {
+    font-family: 'leyenda';
+    src: url('/assets/fonts/Mohave/mohave.light.ttf');
+}
+
+/* -------------*/
+
+/* colores */
+$blanco_texto: #f2f2f2;
+$limon: #d6fa48;
+$azul: #0584ff;
+$verde: #006e70;
+$verde_oscuro: #005454;
+$verde_medio: #008787;
+$verde_claro: #00a09c;
+$verde_azul: #00d1c1;
+
+/* -------------*/

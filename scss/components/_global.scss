@@ -1,0 +1,29 @@
+/* -------------*/
+/* inicializar propiedades*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body 
+{
+    padding: 0;
+    font-family: 'texto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, span 
+{
+    line-height: 2; 
+    margin-top: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
