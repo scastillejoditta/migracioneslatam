@@ -14,6 +14,7 @@
 /* -------------*/
 /* colores */
 /* -------------*/
+/* fotos de notas */
 /* -------------*/
 /* inicializar propiedades*/
 * {
@@ -48,7 +49,10 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 0 auto; }
   .head p {
     margin: 0;
     color: #d6fa48; }
@@ -110,9 +114,14 @@ ul {
   padding-left: 0;
   width: 17em; }
   .card img {
-    border-radius: 0;
+    display: block;
     border: none;
-    width: 100%; }
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 272px;
+    height: 136px;
+    padding-left: 272px;
+    overflow: hidden; }
   .card__header {
     position: relative; }
     .card__headertag {
@@ -157,6 +166,15 @@ ul {
   .btn:hover {
     background-color: #d6fa48;
     color: #0584ff; }
+
+.image1 {
+  background: url("../assets/images/image1.jpg") no-repeat; }
+
+.image2 {
+  background: url("../assets/images/image2.jpg") no-repeat; }
+
+.image3 {
+  background: url("../assets/images/image3.jpg") no-repeat; }
 
 @media (max-width: 822px) {
   .content_news {

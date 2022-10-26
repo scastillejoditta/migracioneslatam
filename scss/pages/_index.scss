@@ -21,6 +21,9 @@ h2
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
 
     p
     {
@@ -114,9 +117,14 @@ ul {
 
     img 
     {
-        border-radius: 0;
+        display: block;
         border: none;
-        width: 100%;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width:272px;
+        height:136px;
+        padding-left: 272px;
+        overflow:hidden;
     }
     
     &__header
@@ -181,6 +189,13 @@ ul {
     {
         background-color: $limon;
         color: $azul;
+    }
+}
+
+@each $nota, $foto in $notas 
+{
+    .image#{$nota} {
+        background: $foto no-repeat;  
     }
 }
 
