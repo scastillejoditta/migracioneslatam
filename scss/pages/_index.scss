@@ -51,7 +51,8 @@ h2
             text-align: center;
             font-family: 'leyenda', sans-serif;
             padding: 4px 0 5px 0;
-            
+            font-size: 1em;
+
             span {
                 color: #fff;
                 font-family: 'titulos', sans-serif;
@@ -125,7 +126,8 @@ ul {
         height:136px;
         padding-left: 272px;
         overflow:hidden;
-    }
+        //opacity: 1;
+     }
     
     &__header
     {
@@ -141,9 +143,9 @@ ul {
             margin: 0;
             position: absolute;
             left: 0;
-            bottom: 3px;
+            top: 0;
             color: $azul;
-            font-size: 0.8em;
+            font-size: 0.9em;
         }
     }
 
@@ -155,11 +157,11 @@ ul {
     
         &title 
         {
-            font-family: 'titulos', sans-serif;
+            font-family: 'texto', sans-serif;
             color: $azul;
             text-transform: uppercase;
-            font-size: 1em;
-            line-height: 100%;
+            font-size: 1.1em;
+            line-height: 120%;
             margin: 5px 0 0 0;
         }
 

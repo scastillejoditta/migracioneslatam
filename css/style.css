@@ -14,7 +14,7 @@
 /* -------------*/
 /* colores */
 /* -------------*/
-/* fotos de notas */
+/* fotos de las notas */
 /* -------------*/
 /* inicializar propiedades*/
 * {
@@ -72,7 +72,8 @@ h2 {
       background-color: transparent;
       text-align: center;
       font-family: 'leyenda', sans-serif;
-      padding: 4px 0 5px 0; }
+      padding: 4px 0 5px 0;
+      font-size: 1em; }
       .head__filtro-btn span {
         color: #fff;
         font-family: 'titulos', sans-serif; }
@@ -133,20 +134,20 @@ ul {
       margin: 0;
       position: absolute;
       left: 0;
-      bottom: 3px;
+      top: 0;
       color: #0584ff;
-      font-size: 0.8em; }
+      font-size: 0.9em; }
   .card__body {
     width: 100%;
     padding: 0;
     margin: 0;
     background-color: transparent; }
     .card__bodytitle {
-      font-family: 'titulos', sans-serif;
+      font-family: 'texto', sans-serif;
       color: #0584ff;
       text-transform: uppercase;
-      font-size: 1em;
-      line-height: 100%;
+      font-size: 1.1em;
+      line-height: 120%;
       margin: 5px 0 0 0; }
     .card__bodytext {
       font-family: 'leyenda', sans-serif;
@@ -175,6 +176,141 @@ ul {
 
 .image3 {
   background: url("../assets/images/image3.jpg") no-repeat; }
+
+.image4 {
+  background: url("../assets/images/image4.jpg") no-repeat; }
+
+.image5 {
+  background: url("../assets/images/image5.jpg") no-repeat; }
+
+.image6 {
+  background: url("../assets/images/image6.jpg") no-repeat; }
+
+.image7 {
+  background: url("../assets/images/image7.jpg") no-repeat; }
+
+.image8 {
+  background: url("../assets/images/image8.jpg") no-repeat; }
+
+.image9 {
+  background: url("../assets/images/image9.jpg") no-repeat; }
+
+.image10 {
+  background: url("../assets/images/image10.jpg") no-repeat; }
+
+.image11 {
+  background: url("../assets/images/image11.jpg") no-repeat; }
+
+.image12 {
+  background: url("../assets/images/image12.jpg") no-repeat; }
+
+.image13 {
+  background: url("../assets/images/image13.jpg") no-repeat; }
+
+.image14 {
+  background: url("../assets/images/image14.jpg") no-repeat; }
+
+.image15 {
+  background: url("../assets/images/image15.jpg") no-repeat; }
+
+.image16 {
+  background: url("../assets/images/image16.jpg") no-repeat; }
+
+.image17 {
+  background: url("../assets/images/image17.jpg") no-repeat; }
+
+.image18 {
+  background: url("../assets/images/image18.jpg") no-repeat; }
+
+.image19 {
+  background: url("../assets/images/image19.jpg") no-repeat; }
+
+.image20 {
+  background: url("../assets/images/image20.jpg") no-repeat; }
+
+.image21 {
+  background: url("../assets/images/image21.jpeg") no-repeat; }
+
+.image22 {
+  background: url("../assets/images/image22.jpg") no-repeat; }
+
+.image23 {
+  background: url("../assets/images/image23.jpg") no-repeat; }
+
+.image24 {
+  background: url("../assets/images/image24.jpg") no-repeat; }
+
+.image25 {
+  background: url("../assets/images/image25.jpg") no-repeat; }
+
+.image26 {
+  background: url("../assets/images/image26.jpg") no-repeat; }
+
+.image27 {
+  background: url("../assets/images/image27.jpg") no-repeat; }
+
+.image28 {
+  background: url("../assets/images/image28.jpg") no-repeat; }
+
+.image29 {
+  background: url("../assets/images/image29.jpg") no-repeat; }
+
+.image30 {
+  background: url("../assets/images/image20.jpg") no-repeat; }
+
+.image31 {
+  background: url("../assets/images/image31.jpg") no-repeat; }
+
+.image32 {
+  background: url("../assets/images/image32.jpg") no-repeat; }
+
+.image33 {
+  background: url("../assets/images/image33.jpg") no-repeat; }
+
+.image34 {
+  background: url("../assets/images/image34.jpg") no-repeat; }
+
+.image35 {
+  background: url("../assets/images/image35.jpg") no-repeat; }
+
+.image36 {
+  background: url("../assets/images/image36.jpg") no-repeat; }
+
+.image37 {
+  background: url("../assets/images/image37.jpg") no-repeat; }
+
+.image38 {
+  background: url("../assets/images/image38.jpg") no-repeat; }
+
+.image39 {
+  background: url("../assets/images/image39.jpg") no-repeat; }
+
+.image40 {
+  background: url("../assets/images/image40.jpg") no-repeat; }
+
+.image41 {
+  background: url("../assets/images/image41.jpg") no-repeat; }
+
+.image42 {
+  background: url("../assets/images/image42.jpg") no-repeat; }
+
+.image43 {
+  background: url("../assets/images/image43.jpg") no-repeat; }
+
+.image44 {
+  background: url("../assets/images/image44.jpg") no-repeat; }
+
+.image45 {
+  background: url("../assets/images/image45.jpg") no-repeat; }
+
+.image46 {
+  background: url("../assets/images/image46.jpg") no-repeat; }
+
+.image47 {
+  background: url("../assets/images/image47.jpg") no-repeat; }
+
+.image48 {
+  background: url("../assets/images/image48.jpg") no-repeat; }
 
 @media (max-width: 822px) {
   .content_news {
