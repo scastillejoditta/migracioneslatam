@@ -10,88 +10,592 @@
         <!-- mio 
         <link rel="stylesheet" href="./css/style.css"/>-->
 
-        <!-- Bootstrap -->
+        <!-- Bootstrap 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>-->
 
         <!-- mio -->
         <link rel="stylesheet" href="./css/style.css"/>
- 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js">
+        </script>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4-rc1/js/foundation.js"
+                type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+                type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.9.3/countUp.js"
+                type="text/javascript"></script>
+        
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="https://cdn.sobekrepository.org/includes/jquery-rotate/2.2/jquery-rotate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        
+        
+         
 </head>
 <body>
     <main>
     <section class="container-fluid map">
         <svg width="100%"></svg>
     </section>
-    <section class="container">
-        <div class="row">
-            <div class="col head">
-                <h2>Historias publicadas</h2>
-                <p>Filtre por:</p>
-                <div class="head__filtro">
-                <a href="#" class="head__filtro-btn">Género * <span>14</span></a>
-                <a href="#" class="head__filtro-btn">Infancia y adolescencia * <span>12</span></a>
-                <a href="#" class="head__filtro-btn">Violencia * <span>5</span></a>
-                <a href="#" class="head__filtro-btn">Centroamérica * <span>5</span></a>
-                <a href="#" class="head__filtro-btn">Darién * <span>4</span></a>
-                <a href="#" class="head__filtro-btn">Trabajo migrante * <span>3</span></a>
-                <a href="#" class="head__filtro-btn">Frontera * <span>2</span></a>
-                <a href="#" class="head__filtro-btn">Racismo * <span>1</span></a>
-                <a href="#" class="head__filtro-btn">Inserción social * <span>1</span></a>
-                <a href="#" class="head__filtro-btn">Desinformación * <span>1</span></a>
+    <section class="news">
+      <div class="head">
+        <h2>Historias publicadas</h2>
+        <p>Filtre por tema:</p>
+
+        <div class="head__filtro">
+          <button id="btnTodos" class="head__filtro-btn" data-name="Todos" onclick="filtrartema('Todos')">Todos * <span>48</span></button>
+          <button class="head__filtro-btn" data-name="Género" onclick="filtrartema('Género')">Género * <span>14</span></button>
+          <button class="head__filtro-btn" data-name="Infancia y adolescencia" onclick="filtrartema('Infancia y adolescencia')">Infancia y adolescencia * <span>12</button></a>
+          <button class="head__filtro-btn" data-name="Violencia" onclick="filtrartema('Violencia')">Violencia * <span>5</span></button>
+          <button class="head__filtro-btn" data-name="Centroamérica" onclick="filtrartema('Centroamérica')">Centroamérica * <span>5</span></button>
+          <button class="head__filtro-btn" data-name="Darién" onclick="filtrartema('Darién')">Darién * <span>4</span></button>
+          <button class="head__filtro-btn" data-name="Trabajo migrante" onclick="filtrartema('Trabajo migrante')">Trabajo migrante * <span>3</span></button>
+          <button class="head__filtro-btn" data-name="Frontera" onclick="filtrartema('Frontera')">Frontera * <span>2</span></button>
+          <button class="head__filtro-btn" data-name="Racismo" onclick="filtrartema('Racismo')">Racismo * <span>1</span></button>
+          <button class="head__filtro-btn" data-name="Inserción social" onclick="filtrartema('Inserción social')">Inserción social * <span>1</span></button>
+          <button class="head__filtro-btn" data-name="Desinformación" onclick="filtrartema('Desinformación')">Desinformación * <span>1</span></button>
+        </div>
+      </div>
+
+      <div id="notas" class="content_news" >
+         <ul class="list">
+            <li data-id="1" class="card">      
+              <div class="card__header">
+                <img src="/assets/images/image1.jpg" class="card__img" alt="Tarjeta">
+                <span class="card__headertag">Género</span>
+              </div>
+              <div class="card__body">
+                <h5 class="card__bodytitle">‘Inyección AntiMéxico’: un paliativo insuficiente contra la violencia sexual</h5>
+                <p class="card__bodytext">Historia de: Fátima Virginia Chávez Pacheco (mexicana), reporteada en: México y publicada en: Radio fórmula.</p>
+                <a href="https://www.radioformula.com.mx/nacional/2022/9/11/inyeccion-antimexico-un-paliativo-insuficiente-contra-la-violencia-sexual-731281.html" target="_blank" class="btn">Leer más</a>
+              </div>
+            </li>
+            <li data-id="2" class="card">
+              <div class="card__header">
+                <img src="/assets/images/image2.jpg" class="card__img" alt="Tarjeta">
+                <span class="card__headertag">Centroamérica</span>
+              </div>
+              <div class="card__body">
+                <h5 class="card__bodytitle">“Entre la incertidumbre y la resistencia”, así viven los más de 160 000 solicitantes de refugio nicas en Costa Rica</h5>
+                <p class="card__bodytext">Historia de: Katherina Estrada Téllez  (nicaragüense viviendo en costa rica), reporteada en: Costa Rica y publicada en: Confidencial.</p>
+                <a href="https://www.confidencial.digital/migrantes/entre-la-incertidumbre-y-la-resistencia-asi-viven-los-mas-de-160-000-solicitantes-de-refugio-nicas-en-costa-rica/" target="_blank" class="btn">Leer más</a>
+              </div>
+            </li>
+            <li data-id="3" class="card">
+              <div class="card__header">
+                <img src="/assets/images/image3.jpg" class="card__img" alt="Tarjeta">
+                <span class="card__headertag">Género</span>
+              </div>
+              <div class="card__body">
+                <h5 class="card__bodytitle">“Me voy de aquí para no morir”: Mujeres mayas de Yucatán que huyen de la violencia de género</h5>
+                <p class="card__bodytext">Historia de: Claudia Victoria Arriaga Durán (mexicana), reporteada en: México y publicada en: Proyecto Libres.</p>
+                <a href="https://proyectolibres.org/2022/09/me-voy-de-aqui-para-no-morir-mujeres-mayas-de-yucatan-que-huyen-de-la-violencia-de-genero/" target="_blank" class="btn">Leer más</a>
+              </div>
+            </li>
+            <li data-id="4" class="card">
+                <div class="card__header">
+                  <img src="/assets/images/image4.jpg" class="card__img" alt="Tarjeta">
+                  <span class="card__headertag">Género</span>
                 </div>
+                <div class="card__body">
+                  <h5 class="card__bodytitle">A Luz Marina solo el Dominó le hace olvidar</h5>
+                  <p class="card__bodytext">Historia de: Jhoandry Suárez  (venezolano viviendo en colombia), reporteada en: Venezuela y publicada en: Pódcast Madres Insiliadas.</p>
+                  <a href="https://open.spotify.com/episode/1MYdqpRNgX1SbQfAv71MlQ?si=aPa1ewV5TU6lAmDJ8U6jtA&nd=1" target="_blank" class="btn">Leer más</a>
+                </div>
+            </li>
+            <li data-id="5" class="card">
+              <div class="card__header">
+                <img src="/assets/images/image5.jpg" class="card__img" alt="Tarjeta">
+                <span class="card__headertag">Género</span>
+              </div>
+              <div class="card__body">
+                <h5 class="card__bodytitle">Abusos, engaños y pesadillas: mujeres migrantes viven con traumas psicológicos en México</h5>
+                <p class="card__bodytext">Historia de: Francisco Javier Cortés Mejía (mexicano), reporteada en: México y publicada en: Efecto Cocuyo.</p>
+                <a href="https://efectococuyo.com/la-humanidad/mujeres-migrantes-viven-con-traumas/" target="_blank" class="btn">Leer más</a>
+              </div>
+          </li>
+          <li data-id="6" class="card">
+            <div class="card__header">
+              <img src="/assets/images/image6.jpg" class="card__img" alt="Tarjeta">
+              <span class="card__headertag">Género</span>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="content_news col-12">
-                <div class="row g-4">
-                        
-                    <div class="col-12 col-md-6 col-lg-4">
-                      <article class="card">
-                        <div class="card__header">
-                            <img src="https://picsum.photos/200/100" class="card-img-top" alt="Tarjeta">
-                            <span class="card__header-tag">Género</span>
-                          </div>
-                          <div class="card-body">
-                            <h5 class="card-title">‘Inyección AntiMéxico’: un paliativo insuficiente contra la violencia sexual</h5>
-                            <p class="card-text">Historia de: Fátima Virginia Chávez Pacheco (mexicana), reporteada en: México y publicada en: Radio fórmula.</p>
-                            <a href="https://www.radioformula.com.mx/nacional/2022/9/11/inyeccion-antimexico-un-paliativo-insuficiente-contra-la-violencia-sexual-731281.html" target="_blank" class="btn">Leer más</a>
-                          </div>
-                      </article>
-                      </div>
-                    
-                      <div class="col-12 col-md-6 col-lg-4">
-                          <article class="card">
-                            <div class="card__header">
-                              <img src="https://picsum.photos/200/100" class="card-img-top" alt="Tarjeta">
-                              <span class="card__header-tag">Centroamérica</span>
-                            </div>
-                              <div class="card-body">
-                                <h5 class="card-title">“Entre la incertidumbre y la resistencia”, así viven los más de 160 000 solicitantes de refugio nicas en Costa Rica</h5>
-                                <p class="card-text">Historia de: Katherina Estrada Téllez  (nicaragüense viviendo en costa rica), reporteada en: Costa Rica y publicada en: Confidencial.</p>
-                                <a href="https://www.confidencial.digital/migrantes/entre-la-incertidumbre-y-la-resistencia-asi-viven-los-mas-de-160-000-solicitantes-de-refugio-nicas-en-costa-rica/" target="_blank" class="btn">Leer más</a>
-                              </div>
-                          </article>
-                          </div>
-                          <div class="col-12 col-md-6 col-lg-4">
-                              <article class="card">
-                                <div class="card__header">
-                                    <img src="https://picsum.photos/200/100" class="card-img-top" alt="Tarjeta">
-                                    <span class="card__header-tag">Centroamérica</span>
-                                  </div>
-                                  <div class="card-body">
-                                    <h5 class="card-title">“Me voy de aquí para no morir”: Mujeres mayas de Yucatán que huyen de la violencia de género</h5>
-                                    <p class="card-text">Historia de: Claudia Victoria Arriaga Durán (mexicana), reporteada en: México y publicada en: Proyecto Libres.</p>
-                                    <a href="https://proyectolibres.org/2022/09/me-voy-de-aqui-para-no-morir-mujeres-mayas-de-yucatan-que-huyen-de-la-violencia-de-genero/" target="_blank" class="btn">Leer más</a>
-                                  </div>
-                              </article>
-                              </div>
-                  </div>
+            <div class="card__body">
+              <h5 class="card__bodytitle">Acompañarnos en la Ruta hacia un Aborto Seguro</h5>
+              <p class="card__bodytext">Historia de: María Tibisay Mendoza Villada (venezolana), reporteada en: Colombia y publicada en: Las comadres púrpuras.</p>
+              <a href="https://lascomadrespurpuras.com/acompanarnos-en-la-ruta-hacia-un-aborto-seguro/" target="_blank" class="btn">Leer más</a>
             </div>
+        </li>
+        <li data-id="7" class="card">
+          <div class="card__header">
+            <img src="/assets/images/image7.jpg" class="card__img" alt="Tarjeta">
+            <span class="card__headertag">Darién</span>
+          </div>
+          <div class="card__body">
+            <h5 class="card__bodytitle">Caramelos en la 7-10: el respiro después del Darién</h5>
+            <p class="card__bodytext">Historia de: Karlo Morales Bermudez (costarricense), reporteada en: Costa Rica y publicada en: Efecto cocuyo.</p>
+            <a href="https://efectococuyo.com/venezuela-migrante/caramelos-en-la-7-10-el-respiro-despues-del-darien/" target="_blank" class="btn">Leer más</a>
+          </div>
+      </li>
+      <li data-id="8" class="card">
+        <div class="card__header">
+          <img src="/assets/images/image8.jpg" class="card__img" alt="Tarjeta">
+          <span class="card__headertag">Género</span>
         </div>
+        <div class="card__body">
+          <h5 class="card__bodytitle">De buses, tránsitos y transiciones: la historia de Siri Daniela Aconcha</h5>
+          <p class="card__bodytext">Historia de: Jorge Javier Basilago (argentino viviendo en ecuador), reporteada en: Ecuador y publicada en: La línea de fuego.</p>
+          <a href="https://lalineadefuego.info/de-buses-transitos-y-transiciones-la-historia-de-siri-daniela-aconcha/" target="_blank" class="btn">Leer más</a>
+        </div>
+    </li>
+    <li data-id="9" class="card">
+      <div class="card__header">
+        <img src="/assets/images/image9.jpg" class="card__img" alt="Tarjeta">
+        <span class="card__headertag">Violencia</span>
+      </div>
+      <div class="card__body">
+        <h5 class="card__bodytitle">Desaparición y crisis forense, ¿a quién le interesan los cuerpos de migrantes encontrados en México?</h5>
+        <p class="card__bodytext">Historia de: Héctor Alonso Pérez  (mexicano), reporteada en: México y publicada en: Buzos.</p>
+        <a href="https://buzos.com.mx/index.php/nota/index/12968" target="_blank" class="btn">Leer más</a>
+      </div>
+    </li>
+    <li data-id="10" class="card">
+      <div class="card__header">
+        <img src="/assets/images/image10.jpg" class="card__img" alt="Tarjeta">
+        <span class="card__headertag">Infancia y adolescencia</span>
+      </div>
+      <div class="card__body">
+        <h5 class="card__bodytitle">El derecho a la salud, la batalla de los Saavedra Mora</h5>
+        <p class="card__bodytext">Historia de: Silvana Julieth Pontón Arias (colombiana), reporteada en: Colombia y publicada en: Subalternativa.</p>
+        <a href="https://www.subaalternativa.co/el-derecho-a-la-salud-la-batalla-de-los-saavedra-mora/" target="_blank" class="btn">Leer más</a>
+      </div>
+  </li>
+  <li data-id="11" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image11.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Centroamérica</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">El Desafío Haitiano Pone a Prueba a México</h5>
+      <p class="card__bodytext">Historia de: Lucía Irene Mimiaga León (mexicana), reporteada en: Mexico y publicada en: El Debate.</p>
+      <a href="https://www.debate.com.mx/politica/El-desafio-haitiano-pone-a-prueba-a-Mexico-20220911-0114.html" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="12" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image12.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Violencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">El Destierro Tras la Defensa del Río Magdalena</h5>
+      <p class="card__bodytext">Historia de: Karen Parrado Beltrán (colombiana), reporteada en: Colombia y publicada en: Mutante.</p>
+      <a href="https://www.mutante.org/contenidos/defensa-rio-magdalena-fracking#_msocom_1" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="13" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image13.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">El laberinto emocional de los niños dejados atrás: la tragedia invisible</h5>
+      <p class="card__bodytext">Historia de: Nayrobis Rodríguez Rodríguez (venezolana), reporteada en: Venezuela y publicada en: El Estímulo.</p>
+      <a href="https://elestimulo.com/venezuela/2022-09-10/ninos-dejados-atras-migrantes-venezolanos-sucre-cumana/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="14" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image14.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">El problema de 7000 niños venezolanos migrantes en Argentina: hay tres años de espera para recibir el DNI</h5>
+      <p class="card__bodytext">Historia de: Desiré Santander (venezolana viviendo en argentina), reporteada en: Argentina y publicada en: Infobae.</p>
+      <a href="https://www.infobae.com/sociedad/2022/09/10/el-problema-de-7000-mil-ninos-venezolanos-migrantes-en-argentina-hay-tres-anos-de-espera-para-recibir-el-dni/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="15" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image15.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">El viaje de Ana y el Coyote: 4,000 Dólares y Mentiras</h5>
+      <p class="card__bodytext">Historia de: Kelly Josselin Ortez López  (hondureña), reporteada en: Honduras y publicada en: El Libertador.</p>
+      <a href="https://ellibertador.hn/2022/09/10/el-viaje-de-ana-y-el-coyote-4000-dolares-y-mentiras/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="16" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image16.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Centroamérica</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Ellas siembran, mujeres migrantes en el programa de agrícola Sembrando Vida</h5>
+      <p class="card__bodytext">Historia de: Analucina Garza González (mexicana), reporteada en: México y publicada en: Octopus.</p>
+      <a href="https://octopusmexico.com/2022/09/13/ellas-siembran-mujeres-migrantes-en-el-programa-de-agricola-sembrando-vida/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="17" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image17.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Desinformación</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Familia y Fake News, las Burbujas Digitales y las Voces Autoritativas de las Diásporas en EE. UU</h5>
+      <p class="card__bodytext">Historia de: Oscar Estrada (hondureño viviendo en estados unidos), reporteada en: EEUU y publicada en: Contracorriente.</p>
+      <a href="https://contracorriente.red/2022/09/12/familia-y-fake-news-las-burbujas-digitales-y-las-voces-autoritativas-de-las-diasporas-en-ee-uu/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="18" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image18.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Trabajo migrante</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Invisibles en las plantaciones: migrantes venezolanas impulsan la recolección de café en Colombia</h5>
+      <p class="card__bodytext">Historia de: Rosalinda Hernández Colmenares (venezolana), reporteada en: Colombia y publicada en: El Estímulo.</p>
+      <a href="https://elestimulo.com/destacados/2022-09-11/migrantes-venezolanas-mujeres-cafe-norte-de-santander/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="19" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image19.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Centroamérica</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">La incomprensión lingüística: un problema creciente entre migrantes en Tapachula</h5>
+      <p class="card__bodytext">Historia de: Carlos Andrés Sánchez Domínguez (mexicano), reporteada en: México y publicada en: Chiapas paralelo.</p>
+      <a href="https://www.chiapasparalelo.com/noticias/2022/09/la-incomprension-linguistica-un-problema-creciente-entre-migrantes-en-tapachula/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="20" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image20.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Violencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">La solitaria búsqueda de los migrantes desaparecidos</h5>
+      <p class="card__bodytext">Historia de: Rafael David Sulbrán Castillo  (venezolano viviendo en colombia), reporteada en: Venezuela y publicada en: Estela Migratoria.</p>
+      <a href="https://estelamigratoria.com/la-solitaria-busqueda-de-los-migrantes-desaparecidos/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="21" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image21.jpeg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">La travesía de María Fernanda: Migrante y niña no acompañada</h5>
+      <p class="card__bodytext">Historia de: Andrea López  (chilena), reporteada en: Chile y publicada en: Revista sur.</p>
+      <a href="https://www.revistasur.cl/revistasur.cl/2022/09/la-travesia-de-maria-fernanda-migrante-y-nina-no-acompanada/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="22" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image22.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">La vida después de cruzar el muro: la felicidad está en otra parte</h5>
+      <p class="card__bodytext">Historia de: Asier Vera Santamaría (español viviendo en guatemala), reporteada en: EEUU y publicada en: Brújula global.</p>
+      <a href="https://www.brujulaglobal.com/migracion/2022/09/15/la-vida-despues-de-cruzar-el-muro-la-felicidad-esta-en-otra-parte/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="23" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image23.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Darién</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Las heridas por curar después del Darién</h5>
+      <p class="card__bodytext">Historia de: Iván Reyes (venezolano viviendo en estados unidos), reporteada en: Colombia y publicada en: Efecto Cocuyo.</p>
+      <a href="https://efectococuyo.com/venezuela-migrante/las-heridas-por-curar-despues-del-darien/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="24" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image24.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Género</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Las madres que mueren sin encontrar a sus migrantes</h5>
+      <p class="card__bodytext">Historia de: Doris Eunice Rosales Arévalo (salvadoreña), reporteada en: El Salvador y publicada en: La prensa gráfica.</p>
+      <a href="https://www.laprensagrafica.com/elsalvador/Las-madres-que-mueren-sin-encontrar-a-sus-migrantes-20220914-0088.html" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="25" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image25.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Las Vidas Perdidas de los Hijos Migrantes</h5>
+      <p class="card__bodytext">Historia de: Jonathan Gutiérrez Otalvares (venezolano), reporteada en: Venezuela y publicada en: Historias que laten.</p>
+      <a href="https://www.historiasquelaten.com/especiales/las-vidas-perdidas-de-los-hijos-migrantes/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="26" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image26.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Inserción social</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Lilliam y el culto a San Juan: un puente caribeño para cruzar</h5>
+      <p class="card__bodytext">Historia de: Juan Carlos Gonzalez Diaz (venezolano viviendo en república dominicana), reporteada en: República Dominicana y publicada en: El Mitin.</p>
+      <a href="https://www.elmitin.do/lilliam-y-el-culto-a-san-juan-un-puente-caribeno-para-cruzar/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="27" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image27.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Género</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Llámame por mi nombre: Experiencias transfronterizas</h5>
+      <p class="card__bodytext">Historia de: Milton Patiño Ocampo (colombiano), reporteada en: Colombia y publicada en: Vokaribe.</p>
+      <a href="https://www.vokaribe.net/index.php/2022/09/10/llamame-por-mi-nombre-experiencias-trans-fronterizas/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="28" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image28.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Los niños invisibles de la migración venezolana</h5>
+      <p class="card__bodytext">Historia de: Luis Fernando Cantoral Benavides  (peruano viviendo en bolivia), reporteada en: Bolivia y publicada en: ANF.</p>
+      <a href="https://www.noticiasfides.com/nacional/sociedad/los-ninos-invisibles-de-la-migracion-venezolana-417642" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="29" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image29.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Madrinas escolares sostienen la niñez dejada atrás en Venezuela</h5>
+      <p class="card__bodytext">Historia de: María Fernanda Rodríguez  (venezolana), reporteada en: Venezuela y publicada en: Historias que laten.</p>
+      <a href="https://www.historiasquelaten.com/madrinas-escolares-sostienen-la-ninez-dejada-atras-en-venezuela/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="30" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image30.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Género</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Menstruación Migrante</h5>
+      <p class="card__bodytext">Historia de: Melani Coyoy Godínez (guatemalteca), reporteada en: EEUU y publicada en: Sónica 106.9.</p>
+      <a href="https://open.spotify.com/episode/7oWPH1O4MuQRcPBNJvjypG?si=S5VEeQYqQtej_-w_UKks3Q&nd=1" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="31" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image31.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Racismo</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Migraciones de desigualdad: La brecha salarial por color de piel en Martinica</h5>
+      <p class="card__bodytext">Historia de: Tania HCS (salvadoreña viviendo en martinica), reporteada en: Martinica y publicada en: Mundo sin cobertura.</p>
+      <a href="https://mundosincobertura.com/2022/09/15/migraciones-de-desigualdad-la-brecha-salarial-por-color-de-piel-en-martinica/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="32" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image32.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Género</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Migrante y Atada a un Esposo Agresor</h5>
+      <p class="card__bodytext">Historia de: Nicol Valeri León Arge (peruana), reporteada en: Perú y publicada en: Wayka.</p>
+      <a href="https://wayka.pe/migrante-y-atada-a-un-esposo-agresor/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="33" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image33.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Centroamérica</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Migrar a España, una montaña de emociones y aventuras: La Historia de Seis Hondureñas</h5>
+      <p class="card__bodytext">Historia de: Xochilth Rodríguez García (hondureña viviendo en españa), reporteada en: España y publicada en: MnTv.</p>
+      <a href="https://mntv.hn/migrar-a-espana-una-montana-rusa-de-emociones-y-aventuras-la-historia-de-seis-hondurenas.html" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="34" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image34.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Violencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Migrar y ser reclutado: el delito silencioso en la frontera con Venezuela</h5>
+      <p class="card__bodytext">Historia de: Valentina Parada Lugo (colombiana), reporteada en: Colombia y publicada en: El Espectador.</p>
+      <a href="https://www.elespectador.com/colombia-20/conflicto/migrar-y-ser-reclutado-el-delito-silencioso-en-la-frontera-con-venezuela/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="35" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image35.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Trabajo migrante</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Mucho y nada: lo que vale un título universitario para un migrante venezolano en Colombia</h5>
+      <p class="card__bodytext">Historia de: Osiris del Mar Ceballos Garrido (venezolana viviendo en colombia), reporteada en: Colombia y publicada en: Vorágine.</p>
+      <a href="https://voragine.co/mucho-y-nada-lo-que-vale-un-titulo-universitario-para-un-migrante-venezolano-en-colombia/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="36" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image36.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Género</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Mujeres Migrantes en las «Invisibles» Tareas de Cuidado</h5>
+      <p class="card__bodytext">Historia de: Agustina Bordigoni (argentina), reporteada en: Argentina y publicada en: La opinión.</p>
+      <a href="https://laopinionsl.com.ar/especiales/mujeres-migrantes-en-las-invisibles-tareas-de-cuidado/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="37" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image37.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Niñez migrante, un atractivo para el crimen organizado en Guatemala</h5>
+      <p class="card__bodytext">Historia de: Mirna Alvarado (guatemalteca), reporteada en: Guatemala y publicada en: Ojo con mi pisto.</p>
+      <a href="https://www.ojoconmipisto.com/ninez-migrante-un-atractivo-para-el-crimen-organizado-en-guatemala/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="38" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image38.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Frontera</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Pacaraima: migrar al otro lado de los hitos entre Venezuela y Brasil</h5>
+      <p class="card__bodytext">Historia de: Morelia Morillo Ramos (venezolana), reporteada en: Brasil y publicada en: El Pitazo.</p>
+      <a href="https://elpitazo.net/migracion/pacaraima-migrar-al-otro-lado-de-los-hitos-entre-venezuela-y-brasil/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="39" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image39.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Violencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Prefieren las hieleras antes que volver a Nicaragua</h5>
+      <p class="card__bodytext">Historia de: Leana Mercedes Icabalceta Martínez (nicaragüense viviendo en costa rica), reporteada en: Nicaragua y publicada en: Radio Vos.</p>
+      <a href="https://radiovos.org/noticias/15926-migrantes-nicaraguenses-peticiones-refugios-asilo-politico/?fbclid=IwAR3t_QXiJDXaW8OohCH_RKw1WDtYiVF-2GnGzJ_LpFB2kJVTW_fNPAJ2KvM" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="40" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image40.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Puerto Pizarro: La Localidad Peruana donde la Violencia Contra los Escolores Venezolanos pasa Despercibida</h5>
+      <p class="card__bodytext">Historia de: Daniela Valdivia Blume (peruana), reporteada en: Perú y publicada en: Convoca.</p>
+      <a href="https://convoca.pe/agenda-propia/puerto-pizarro-la-localidad-peruana-donde-la-violencia-contra-los-escolares" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="41" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image41.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Género</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Ser mujer y migrante en Perú: cuando la migración viene acompañada de depresión y violencia</h5>
+      <p class="card__bodytext">Historia de: Carmen Aragua (venezolanna viviendo en perú), reporteada en: Perú y publicada en: Radio fe y alegría.</p>
+      <a href="https://www.radiofeyalegrianoticias.com/ser-mujer-y-migrante-en-peru-cuando-la-migracion-viene-acompanada-de-depresion-y-violencia/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="42" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image42.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Darién</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Solidaridad en el infierno del Tapón del Darién</h5>
+      <p class="card__bodytext">Historia de: Mar Sabé Dausá  (española viviendo en panamá), reporteada en: Colombia y publicada en: Espacio angular.</p>
+      <a href="https://espacioangular.org/solidaridad-en-el-infierno-del-tapon-del-darien/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="43" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image43.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Género</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Sororidad migrante: grupos de apoyo de mujeres venezolanas en Perú</h5>
+      <p class="card__bodytext">Historia de: Héctor Villa León (venezolano viviendo en perú), reporteada en: Perú y publicada en: La Antígona.</p>
+      <a href="https://laantigona.com/sororidad-migrante-grupos-de-apoyo-de-mujeres-venezolanas-en-peru%EF%BF%BC/#.YyN01GxR1Pa" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="44" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image44.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Darién</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Te cuento mi historia, por si quieres cruzar el Darién</h5>
+      <p class="card__bodytext">Historia de: Marcos Mancero (ecuatoriano), reporteada en: Colombia y publicada en: Rebelión.</p>
+      <a href="https://rebelion.org/te-cuento-mi-historia-por-si-quieres-cruzar-el-darien/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="45" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image45.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Frontera</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Tulcán, un paso hostil y un hogar esquivo</h5>
+      <p class="card__bodytext">Historia de: Mayuri Castro (ecuatoriana), reporteada en: Ecuador y publicada en: La barra espaciadora.</p>
+      <a href="https://www.labarraespaciadora.com/ddhh/tulcan-un-paso-hostil-y-un-hogar-esquivo/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="46" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image47.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Infancia y adolescencia</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Un “paseo” por la trocha: el relato de una niña que migró de Venezuela a Colombia</h5>
+      <p class="card__bodytext">Historia de: Constanza Bruno Solera (colombiana), reporteada en: Colombia y publicada en: El Espectador.</p>
+      <a href="https://www.elespectador.com/colombia-20/conflicto/migrantes-venezolanos-en-colombia-el-relato-de-una-nina-que-cruzo-una-trocha-ilegal/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="47" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image47.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Trabajo migrante</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Una Historia Muchos Dientes</h5>
+      <p class="card__bodytext">Historia de: Abelardo Gómez Molina (colombiano), reporteada en: Colombia y publicada en: La cola de rata.</p>
+      <a href="https://www.lacoladerata.co/conlupa/una-historia-con-muchos-dientes/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+  <li data-id="48" class="card">
+    <div class="card__header">
+      <img src="/assets/images/image48.jpg" class="card__img" alt="Tarjeta">
+      <span class="card__headertag">Género</span>
+    </div>
+    <div class="card__body">
+      <h5 class="card__bodytitle">Venezolanas en busca de un aborto</h5>
+      <p class="card__bodytext">Historia de: José David Escobar Franco (colombiano), reporteada en: Colombia y publicada en: El Espectador.</p>
+      <a href="https://www.elespectador.com/mundo/america/venezolanas-en-busca-de-un-aborto/" target="_blank" class="btn">Leer más</a>
+    </div>
+  </li>
+</ul>
+</div>
+</section>
 
-    </section>
-    </main>
+  </main>
+      <!-- mio -->
+  <script src="./script.js"></script>
+
 </body>
 </html>

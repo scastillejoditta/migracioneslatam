@@ -57,7 +57,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
     gap: 10px; }
     .head__filtro-btn {
       display: inline-block;
@@ -67,13 +67,15 @@ h2 {
       border-radius: 8px;
       background-color: transparent;
       text-align: center;
-      font-family: 'leyenda', sans-serif; }
+      font-family: 'leyenda', sans-serif;
+      padding: 4px 0 5px 0; }
       .head__filtro-btn span {
         color: #fff;
         font-family: 'titulos', sans-serif; }
       .head__filtro-btn:hover {
         background-color: #d6fa48;
-        color: #0584ff; }
+        color: #0584ff;
+        cursor: pointer; }
         .head__filtro-btn:hover span {
           color: #0584ff; }
 
@@ -86,6 +88,16 @@ h2 {
 svg {
   background-color: transparent; }
 
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 5em; }
+  ul li {
+    margin-bottom: 1em; }
+
 .content_news {
   width: 70%;
   margin-left: auto;
@@ -95,53 +107,60 @@ svg {
   background-color: transparent;
   border-radius: 0;
   border: none;
-  padding-left: 0; }
+  padding-left: 0;
+  width: 17em; }
   .card img {
     border-radius: 0;
-    border: none; }
+    border: none;
+    width: 100%; }
   .card__header {
     position: relative; }
-    .card__header-tag {
+    .card__headertag {
       display: inline-block;
-      height: 20px;
+      height: 18px;
       font-family: 'leyenda', sans-serif;
       background-color: #d6fa48;
-      padding: 0 5px 2px 5px;
+      padding: 0 5px 1px 5px;
       margin: 0;
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: 3px;
       color: #0584ff;
       font-size: 0.8em; }
-  .card-body {
+  .card__body {
     width: 100%;
     padding: 0;
     margin: 0;
     background-color: transparent; }
-  .card-title {
-    font-family: 'titulos', sans-serif;
-    color: #0584ff;
-    text-transform: uppercase;
-    font-size: 1em;
-    line-height: 100%;
-    margin: 5px 0 0 0; }
-  .card-text {
-    font-family: 'leyenda', sans-serif;
-    color: #f2f2f2;
-    line-height: 100%;
-    font-size: 0.9em;
-    margin: 5px 0px 10px 0; }
+    .card__bodytitle {
+      font-family: 'titulos', sans-serif;
+      color: #0584ff;
+      text-transform: uppercase;
+      font-size: 1em;
+      line-height: 100%;
+      margin: 5px 0 0 0; }
+    .card__bodytext {
+      font-family: 'leyenda', sans-serif;
+      color: #f2f2f2;
+      line-height: 100%;
+      font-size: 0.9em;
+      margin: 5px 0px 10px 0; }
 
 .btn {
   color: #d6fa48;
   background-color: #0584ff;
   border: none;
+  border-radius: 6px;
   font-family: 'leyenda', sans-serif;
   font-size: 0.9em;
-  padding: 3px 10px 3px 10px; }
+  padding: 3px 10px 4px 10px; }
   .btn:hover {
     background-color: #d6fa48;
     color: #0584ff; }
+
+@media (max-width: 822px) {
+  .content_news {
+    width: 100%; } }
 
 .cls-1 {
   opacity: .12;
