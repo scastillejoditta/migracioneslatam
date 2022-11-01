@@ -35,7 +35,7 @@ h2
     {
         position: absolute;
         width: 50%;
-        top: 60%;
+        top: 31%;
         left: 20px;
 
         h1 {
@@ -304,14 +304,14 @@ h2
     }
 }
 
-
+/*
 @media (max-width: 1200px)
 {
     .news
     {
         margin: 12em auto 0 auto;
     }
-}
+}*/
 
 @media (max-width: 822px)
 {
@@ -332,10 +332,10 @@ h2
 
         }
     }
-    .news
+    /*.news
     {
         margin: 3em auto 0 auto;
-    }
+    }*/
 }
 
 @media (max-width: 769px)

@@ -57,7 +57,7 @@ h2 {
   .container__caption {
     position: absolute;
     width: 50%;
-    top: 60%;
+    top: 31%;
     left: 20px; }
     .container__caption h1 {
       font-family: 'titulos', sans-serif;
@@ -378,10 +378,14 @@ h2 {
 .image48 {
   background: url("../assets/images/image48.jpg") no-repeat; }
 
-@media (max-width: 1200px) {
-  .news {
-    margin: 12em auto 0 auto; } }
-
+/*
+@media (max-width: 1200px)
+{
+    .news
+    {
+        margin: 12em auto 0 auto;
+    }
+}*/
 @media (max-width: 822px) {
   .container {
     position: inherit;
@@ -394,8 +398,10 @@ h2 {
       margin: 3em auto 1em auto;
       position: inherit;
       width: 90%; }
-  .news {
-    margin: 3em auto 0 auto; } }
+  /*.news
+    {
+        margin: 3em auto 0 auto;
+    }*/ }
 
 @media (max-width: 769px) {
   .news__content {
