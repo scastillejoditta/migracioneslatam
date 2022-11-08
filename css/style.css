@@ -456,14 +456,6 @@ h2 {
 .image48 {
   background: url("../assets/images/image48.jpg") no-repeat; }
 
-/*
-@media (max-width: 1200px)
-{
-    .news
-    {
-        margin: 12em auto 0 auto;
-    }
-}*/
 @media (max-width: 822px) {
   .container {
     position: inherit;
