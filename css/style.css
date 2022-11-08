@@ -113,6 +113,84 @@ h2 {
 .chequear {
   transition: stroke-dashoffset .5s; }
 
+.linea_sur {
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%; }
+
+#puntoBuenosAires, .LabelBuenosAires, #puntoSantiago, .LabelSantiago, #puntoSalta, .LabelSalta, #puntoLima, .LabelLima, #puntoTumbes, #puntoBogotaSur, .LabelBogotaSur,
+.LabelTumbes, #puntoTulcan, .LabelTulcan, #puntoQuito, .LabelQuito, .Labels_TrinidadyTobago, #puntoTrinidad, #puntoBoavista, #puntoManaos, .LabelManaos {
+  opacity: 0; }
+
+.step1_sur {
+  animation: migrar 5s 0s ease 1 forwards; }
+
+.step2_sur {
+  animation: aparecer 1s .5s ease 1 forwards; }
+
+.step3_sur {
+  animation: migrar 10s 1.5s ease 1 forwards; }
+
+.step4_sur {
+  animation: aparecer 1s 2.8s ease 1 forwards; }
+
+.step5_sur {
+  animation: aparecer 1s 3.2s ease 1 forwards; }
+
+.step6_sur {
+  animation: migrar 10s 4s ease 1 forwards; }
+
+.step7_sur {
+  animation: aparecer .5s 5.3s ease 1 forwards; }
+
+.step8_sur {
+  animation: aparecer .5s 5.8s ease 1 forwards; }
+
+.step9_sur {
+  animation: aparecer .5s 5.9s ease 1 forwards; }
+
+.step10_sur {
+  animation: migrar 10s 6s ease 1 forwards; }
+
+.step11_sur {
+  animation: aparecer .5s 6.8s ease 1 forwards; }
+
+.step12_sur {
+  animation: aparecer .5s 7.5s ease 1 forwards; }
+
+.step13_sur {
+  animation: migrar 8s 8.3s ease 1 forwards; }
+
+.step14_sur {
+  animation: migrar 4s 8.3s ease 1 forwards; }
+
+.step15_sur {
+  animation: migrar 4s 9s ease 1 forwards; }
+
+.step16_sur {
+  animation: aparecer .5s 9.9s ease 1 forwards; }
+
+.step17_sur {
+  animation: migrar 5s 9.5s ease 1 forwards; }
+
+.step18_sur {
+  animation: migrar 5s 10s ease 1 forwards; }
+
+.step19_sur {
+  animation: aparecer 1s 10.5s ease 1 forwards; }
+
+.step20_sur {
+  animation: aparecer 1s 10.8s ease 1 forwards; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes migrar {
+  to {
+    stroke-dashoffset: 0; } }
+
 .news {
   margin: 3em auto 0 auto; }
   .news__head {
@@ -407,7 +485,7 @@ h2 {
   .news__content {
     width: 100%; } }
 
-.uuid-2c71ae4f-3c13-4bde-8c32-bf1b35f421f2, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-7be7d557-ce95-41b7-abcc-f5a1a2c49ca6, .uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252, .uuid-b7e2e19c-3c85-4d20-869f-4b8cba3674dc, .uuid-9602996c-3b4a-49bc-81b3-ae13a6a557e8, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
+.uuid-5f698cf1-35e7-4d33-ac94-fd0dbf396519, .linea_sur, .uuid-2c71ae4f-3c13-4bde-8c32-bf1b35f421f2, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-7be7d557-ce95-41b7-abcc-f5a1a2c49ca6, .uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252, .uuid-b7e2e19c-3c85-4d20-869f-4b8cba3674dc, .uuid-9602996c-3b4a-49bc-81b3-ae13a6a557e8, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
   fill: none; }
 
 .mapa_completo {
@@ -416,15 +494,26 @@ h2 {
 .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660 {
   filter: url(#uuid-8e5786c1-e23a-4f74-afa2-ffb1fac197d4); }
 
-.uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-7be7d557-ce95-41b7-abcc-f5a1a2c49ca6, .uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252, .uuid-b7e2e19c-3c85-4d20-869f-4b8cba3674dc, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
+.uuid-5f698cf1-35e7-4d33-ac94-fd0dbf396519, .linea_sur, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-7be7d557-ce95-41b7-abcc-f5a1a2c49ca6, .uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252, .uuid-b7e2e19c-3c85-4d20-869f-4b8cba3674dc, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
   stroke-width: 3px; }
 
-.uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252 {
+.uuid-5f698cf1-35e7-4d33-ac94-fd0dbf396519 {
+  stroke: #ffba5f; }
+
+.linea_sur, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252 {
   stroke: #d6fa48; }
 
-.uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
+.uuid-5f698cf1-35e7-4d33-ac94-fd0dbf396519, .linea_sur, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
   stroke-linecap: round;
   stroke-linejoin: round; }
+
+.uuid-a8600b03-6487-4382-86e6-1fc94dd646fe {
+  font-size: 28.9px; }
+
+.uuid-a8600b03-6487-4382-86e6-1fc94dd646fe, .uuid-19d2cc62-6a07-41a6-8584-99fa06330389 {
+  fill: #fff;
+  font-variation-settings: 'wght' 500;
+  font-weight: 500; }
 
 .uuid-7be7d557-ce95-41b7-abcc-f5a1a2c49ca6, .uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-193657cd-2345-423c-b859-c01e9b429476, .uuid-47585f88-6708-4a0a-9913-00880c2857cb, .uuid-412ad160-1f07-4902-b79a-1071f61af4d7, .uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-fb441b34-e9a0-484f-b31f-4e125940ad89, .uuid-8622bea9-c683-43d7-b3cb-fae41b6f5429, .croquispais, .uuid-7557ce62-2666-4256-a65c-2c65a47f851a, .uuid-5e2140d0-fa7b-4289-a058-36d3a330ce76, .uuid-9119008c-d610-43c6-a504-e3eb1e16d57d, .uuid-a4988a44-200b-4f25-b823-875066937706, .uuid-e4cb6999-6c35-4649-a7fc-59e2862f884b, .uuid-b7e2e19c-3c85-4d20-869f-4b8cba3674dc, .uuid-ae16a3ad-c9b8-44e9-a658-9a33ad63ff46, .uuid-7ad1fb36-21b0-4cc6-b1d5-5e4d0a76f142, .uuid-9602996c-3b4a-49bc-81b3-ae13a6a557e8, .uuid-30343332-bb3b-422d-9c24-82881d59cd0f, .uuid-1d2025e9-aa56-4fc3-9600-598176209412, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-33b7d983-9970-4b80-858e-77cc405d436e {
   stroke-miterlimit: 10; }
@@ -578,3 +667,192 @@ h2 {
 
 .Labels_otrospaises, #dvConvenciones, .RutaNorte, #dvFlor, .RutaSur {
   opacity: 0; }
+
+.Labels_Chile {
+  transform: translate(-50px, -205px); }
+
+.Labels_Ecuador {
+  transform: translate(-120px, -20px); }
+
+.Labels_Argentina {
+  transform: translate(-20px, -150px); }
+
+.cls-1 {
+  opacity: .12;
+  fill: #000;
+  animation: Latam .8s 10s ease 1 forwards; }
+
+@keyframes Latam {
+  from {
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 4px;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700; }
+  to {
+    stroke-dashoffset: 0; } }
+
+.cls-4 {
+  fill: transparent;
+  stroke: #e34038;
+  stroke-width: 15px;
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: muro .8s 8.5s ease 1 forwards; }
+
+@keyframes muro {
+  to {
+    stroke-dashoffset: 400; } }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes parpadear {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes cerrar_pais {
+  0% {
+    fill: #000;
+    opacity: .12; }
+  100% {
+    fill: #d5f84a;
+    opacity: 1; } }
+
+.cls-5 {
+  fill: #000;
+  opacity: .12;
+  animation: cerrar_pais .8s 9.5s ease 1 forwards; }
+
+/* puntos */
+.cls-6 {
+  fill: #d5f84a;
+  opacity: 0;
+  cursor: pointer; }
+
+/* .darien {animation: aparecer .5s 1.5s ease 1 forwards;}
+.sanandres {animation: aparecer .5s 5s ease 1 forwards;}
+.riobravo {animation: aparecer .2s 9.5s ease 1 forwards;} */
+.darien {
+  animation: parpadear 3s 1.5s infinite; }
+
+.sanandres {
+  animation: parpadear 3s 4.5s infinite; }
+
+.riobravo {
+  animation: parpadear 3s 10.5s  infinite; }
+
+@keyframes marcar_punto {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+.cls-8 {
+  fill: #0c4ed3;
+  opacity: 0;
+  animation: aparecer 2s 13.5s ease 2 forwards; }
+
+.cls-6, .cls-10 {
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 4px; }
+
+/* flechas */
+.cls-10 {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600; }
+
+.f1 {
+  animation: migrar 1s 0s ease 1 forwards; }
+
+.p1 {
+  animation: migrar 1s 1s ease 1 forwards; }
+
+.f2 {
+  animation: migrar 1s 3s ease 1 forwards; }
+
+.p2 {
+  animation: migrar 1s 4s ease 1 forwards; }
+
+.f3 {
+  animation: migrar 1s 3s ease 1 forwards; }
+
+.p3 {
+  animation: migrar 1s 4s ease 1 forwards; }
+
+.f4 {
+  animation: migrar 1s 6s ease 1 forwards; }
+
+.p4 {
+  animation: migrar 1s 6.5s ease 1 forwards; }
+
+.f5 {
+  animation: migrar 1s 6s ease 1 forwards; }
+
+.p5 {
+  animation: migrar 1s 6.5s ease 1 forwards; }
+
+.f6 {
+  animation: migrar 1s 7s ease 1 forwards; }
+
+.p6 {
+  animation: migrar 1s 7.5s ease 1 forwards; }
+
+.f7 {
+  animation: migrar 1s 8s ease 1 forwards; }
+
+.p7 {
+  animation: migrar 1s 8.5s ease 1 forwards; }
+
+.f8 {
+  animation: migrar 1s 11s ease 1 forwards; }
+
+.p8 {
+  animation: migrar 1s 11.5s ease 1 forwards; }
+
+.f9 {
+  animation: migrar 1s 12s ease 1 forwards; }
+
+.p9 {
+  animation: migrar 1s 12.5s ease 1 forwards; }
+
+@keyframes migrar {
+  to {
+    stroke-dashoffset: 400; } }
+
+.cls-11 {
+  mix-blend-mode: multiply; }
+
+.cls-10 {
+  fill: none;
+  stroke-linecap: round; }
+
+.cls-8, .cls-12 {
+  fill-rule: evenodd; }
+
+.cls-12 {
+  fill: #d6fa48;
+  opacity: 0; }
+
+.cls-2 {
+  fill: #0048d8;
+  opacity: 0; }
+
+.cls-3 {
+  fill: #d8fc3f;
+  opacity: 0; }
+
+.cls-7 {
+  fill: #0c4ed3;
+  opacity: 0; }
+
+.svg {
+  background-color: #18a477; }

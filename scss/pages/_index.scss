@@ -115,6 +115,135 @@ h2
     transition: stroke-dashoffset .5s;
   }
 
+.linea_sur {
+    stroke-dasharray: 100%;
+    stroke-dashoffset:100%;
+}
+
+
+#puntoBuenosAires, .LabelBuenosAires, #puntoSantiago, .LabelSantiago, #puntoSalta, .LabelSalta, #puntoLima, .LabelLima, #puntoTumbes, #puntoBogotaSur, .LabelBogotaSur, 
+ .LabelTumbes, #puntoTulcan, .LabelTulcan, #puntoQuito, .LabelQuito, .Labels_TrinidadyTobago, #puntoTrinidad, #puntoBoavista, #puntoManaos, .LabelManaos
+{
+    opacity: 0;
+}
+
+.step1_sur //#lineaCaracasTrinidad
+{
+    animation: migrar 5s 0s ease 1 forwards;
+}
+
+.step2_sur //.Labels_TrinidadyTobago, #puntoTrinidad
+{
+    animation: aparecer 1s .5s ease 1 forwards;
+}
+
+.step3_sur //#lineaCaracasManaos
+{
+    animation: migrar 10s 1.5s ease 1 forwards;
+} 
+
+.step4_sur //#puntoBoavista
+{
+    animation: aparecer 1s 2.8s ease 1 forwards;
+}
+
+.step5_sur //#puntoManaos, .LabelManaos
+{
+    animation: aparecer 1s 3.2s ease 1 forwards;
+}
+
+.step6_sur //#lineaCaracasQuito
+{
+    animation: migrar 10s 4s ease 1 forwards;
+}
+
+.step7_sur //#puntoBogotaSur, .LabelBogotaSur 
+{
+    animation: aparecer .5s 5.3s ease 1 forwards;
+}
+
+.step8_sur //#puntoTulcan, .LabelTulcan 
+{
+    animation: aparecer .5s 5.8s ease 1 forwards;
+}
+
+.step9_sur // #puntoQuito, .LabelQuito 
+{
+    animation: aparecer .5s 5.9s ease 1 forwards;
+}
+
+.step10_sur //#lineaQuitoCamana 
+{
+    animation: migrar 10s 6s ease 1 forwards;
+}
+
+.step11_sur //#puntoTumbes, .LabelTumbes 
+{
+    animation: aparecer .5s 6.8s ease 1 forwards;
+}
+
+.step12_sur //#puntoLima, .LabelLima 
+{
+    animation: aparecer .5s 7.5s ease 1 forwards;
+}
+
+.step13_sur //#lineaCamanaSalta
+{
+    animation: migrar 8s 8.3s ease 1 forwards;
+}
+
+.step14_sur //#lineaCamanaMariaElena
+{
+    animation: migrar 4s 8.3s ease 1 forwards;
+}
+
+.step15_sur //#lineaMariaElenaSalta
+{
+    animation: migrar 4s 9s ease 1 forwards;
+}
+
+.step16_sur //#puntoSalta, .LabelSalta 
+{
+    animation: aparecer .5s 9.9s ease 1 forwards;
+}
+
+.step17_sur //#lineaMariaElenaSantiago
+{
+    animation: migrar 5s 9.5s ease 1 forwards;
+}
+
+.step18_sur //#lineaSaltaBuenosAires
+{
+    animation: migrar 5s 10s ease 1 forwards;
+}
+
+.step19_sur //#puntoSantiago, .LabelSantiago 
+{
+    animation: aparecer 1s 10.5s ease 1 forwards;
+}
+
+.step20_sur //#puntoBuenosAires, .LabelBuenosAires
+{
+    animation: aparecer 1s 10.8s ease 1 forwards;
+}
+
+
+@keyframes aparecer 
+{
+    0% {
+        opacity: 0;
+      }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes migrar
+  {
+    to {
+          stroke-dashoffset: 0;
+        }
+  }
 
 .news
     {
