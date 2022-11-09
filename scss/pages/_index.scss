@@ -115,13 +115,17 @@ h2
     transition: stroke-dashoffset .5s;
   }
 
-.linea_sur {
+.linea_sur, .linea_norte {
     stroke-dasharray: 100%;
     stroke-dashoffset:100%;
 }
 
+//----------------------
+// --- Ruta al sur
+//----------------------
 
-#puntoBuenosAires, .LabelBuenosAires, #puntoSantiago, .LabelSantiago, #puntoSalta, .LabelSalta, #puntoLima, .LabelLima, #puntoTumbes, #puntoBogotaSur, .LabelBogotaSur, 
+
+#puntoBuenosAires, .LabelBuenosAires, #puntoSantiago, .LabelSantiago, #puntoSalta, .LabelSalta, #puntoLima, .LabelLima, #puntoTumbes, #puntoBogotasur, .LabelBogotasur, 
  .LabelTumbes, #puntoTulcan, .LabelTulcan, #puntoQuito, .LabelQuito, .Labels_TrinidadyTobago, #puntoTrinidad, #puntoBoavista, #puntoManaos, .LabelManaos
 {
     opacity: 0;
@@ -227,6 +231,159 @@ h2
     animation: aparecer 1s 10.8s ease 1 forwards;
 }
 
+//----------------------
+// --- Ruta al norte
+//----------------------
+.LabelSantiagoNorte, #puntoSantiagoNorte, .LabelLimaNorte, #puntoLimaNorte, .LabelLaHabana, #puntoLaHabana, .LabelQuitoNorte, #puntoQuitoNorte, #puntoCaracasNorte, .Labels_CaracasNorte,
+.Labels_BogotaNorte, #puntoBogotaNorte, .Labels_Medellin, #puntoMedellin, .LabelNecocli, #puntoNecocli, #puntoSanAndres, .Labels_SanAndres, #regionDarien, #regionSanAndresBluefields, 
+#puntoBluefields, #puntoMeteti, .LabelMeteti, .LabelBluefields, #puntoManagua, #puntoGuadalajara, .LabelGuadalajara, #puntoSonora, .LabelSonora, #puntoMonterrey, .LabelMonterrey,
+#puntoTijuana, .LabelTijuana, #puntoCiudadJuarez, .Labels_CiudadJuarez, #PuntoReynosa, .LabelReynosa, #puntoNuevoLaredo, .LabelNuevoLaredo, #puntoNogales, .LabelNogales, #regionHaitiFlorida,
+#puntoMiami, .LabelMiami 
+{
+    opacity: 0;
+}
+
+.step1_norte //#lineaPtoPrincipeBrasil, #lineaPtoPrincipeSantiago
+{
+    animation: migrar 5s 0s ease 1 forwards;
+}
+
+.step2_norte //.LabelSantiagoNorte, #puntoSantiagoNorte
+{
+    animation: aparecer 1s 2.7s ease 1 forwards;
+}
+
+.step3_norte //#LineaBrasilPeru, #lineaSantiagoLima
+{
+    animation: migrar 5s 3s ease 1 forwards;
+}
+
+.step4_norte //.LabelLimaNorte, #puntoLimaNorte
+{
+    animation: aparecer 0.5s 5s ease 1 forwards;
+}
+
+.step5_norte //#lineaLimaQuito, #lineaHabanaQuito 
+{
+    animation: migrar 5s 5s ease 1 forwards;
+}
+
+.step6_norte //.LabelLaHabana, #puntoLaHabana
+{
+    animation: aparecer 0.5s 5.5s ease 1 forwards;
+}
+
+.step7_norte //.LabelQuitoNorte, #puntoQuitoNorte, #puntoCaracasNorte, .Labels_CaracasNorte
+{
+    animation: aparecer 0.5s 6s ease 1 forwards;
+}
+
+.step8_norte //#lineaCaracasBogotaNorte, #lineaQuitoBogota 
+{
+    animation: migrar 5s 6s ease 1 forwards;
+}
+
+.step9_norte //.Labels_BogotaNorte, #puntoBogotaNorte
+{
+    animation: aparecer 0.5s 6.7s ease 1 forwards;
+}
+
+.step10_norte //#lineaBogotaSanAndres, #lineaBogotaNecocli 
+{
+    animation: migrar 10s 7s ease 1 forwards;
+}
+
+.step11_norte //.Labels_Medellin, #puntoMedellin
+{
+    animation: aparecer 0.5s 7.5s ease 1 forwards;
+}
+
+.step12_norte //.LabelNecocli, #puntoNecocli, #puntoSanAndres, .Labels_SanAndres 
+{
+    animation: aparecer 0.5s 9s ease 1 forwards;
+}
+
+.step13_norte //#regionDarien, #regionSanAndresBluefields 
+{
+    animation: aparecer_region 2s 10s ease 1 forwards;
+}
+
+.step14_norte //#puntoBluefields, #puntoMeteti, .LabelMeteti, .LabelBluefields 
+{
+    animation: aparecer 0.5s 11s ease 1 forwards;
+}
+
+.step15_norte //#lineaQuitoPanama
+{
+    animation: migrar 5s 12s ease 1 forwards;
+}
+
+.step16_norte //#lineaDarienManagua, #lineaBluefieldsManagua, #lineaHabanaManagua 
+{
+    animation: migrar 10s 12s ease 1 forwards;
+}
+
+.step17_norte //#puntoManagua
+{
+    animation: aparecer 0.5s 13s ease 1 forwards;
+}
+
+.step18_norte //#lineaMXporHonduras, #lineaMXporGuatemala
+{
+    animation: migrar 10s 14s ease 1 forwards;
+}
+
+.step19_norte //#lineaOaxaca
+{
+    animation: migrar 5s 15.5s ease 1 forwards;
+}
+
+.step20_norte //#puntoGuadalajara, .LabelGuadalajara
+{
+    animation: aparecer 0.5s 16s ease 1 forwards;
+}
+
+.step21_norte //#lineaSaltillo, #lineaGuadalajaraTijuana, #lineaIrapautoCiudadJuarez
+{
+    animation: migrar 5s 16s ease 1 forwards;
+}
+
+.step22_norte //#puntoSonora, .LabelSonora, #puntoMonterrey, .LabelMonterrey
+{
+    animation: aparecer 0.5s 16.5s ease 1 forwards;
+}
+
+.step23_norte //#lineaOaxacaReynosa, #lineaSaltilloValadeces, #lineaSaltilloNuevoLaredo, #lineaMonterreyReynosa
+{
+    animation: migrar 5s 16.5s ease 1 forwards;
+}
+
+.step24_norte //#puntoTijuana, .LabelTijuana, #puntoCiudadJuarez, .Labels_CiudadJuarez, #PuntoReynosa, .LabelReynosa, #puntoNuevoLaredo, .LabelNuevoLaredo, #puntoNogales, .LabelNogales
+{
+    animation: aparecer 0.5s 17s ease 1 forwards;
+}
+
+
+.step25_norte //#lineaSonoraNogales, #lineaSaltilloRiobravo
+{
+    animation: migrar 5s 17s ease 1 forwards;
+}
+
+.step26_norte //#lineaMuroUSA, #lineaRioBravo
+{
+    animation: migrar 5s 18s ease 1 forwards;
+}
+
+.step27_norte //#regionHaitiFlorida 
+{
+    animation: aparecer_region 2s 19s ease 1 forwards;
+}
+
+.step28_norte //#puntoMiami, .LabelMiami
+{
+    animation: aparecer 0.5s 19.5s ease 1 forwards;
+}
+
 
 @keyframes aparecer 
 {
@@ -238,6 +395,19 @@ h2
     }
 }
 
+@keyframes aparecer_region 
+{
+    0% {
+        opacity: 0;
+      }
+    50% {
+        opacity: .9;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+
 @keyframes migrar
   {
     to {
@@ -245,6 +415,7 @@ h2
         }
   }
 
+    
 .news
     {
       
