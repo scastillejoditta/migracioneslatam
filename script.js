@@ -106,7 +106,9 @@ function pasos_al_sur()
 
   step4_sur = document.querySelector("#puntoBoavista")
   step4_sur.classList.add("step4_sur");
-
+  step4_1_sur = document.querySelector(".LabelBoavista")
+  step4_1_sur.classList.add("step4_sur");
+  
   step5_sur = document.querySelector("#puntoManaos")
   step5_sur.classList.add("step5_sur");
   step5_1_sur = document.querySelector(".LabelManaos")
@@ -190,6 +192,8 @@ function dehacer_pasos_al_sur()
 
   step4_sur = document.querySelector("#puntoBoavista")
   step4_sur.classList.remove("step4_sur");
+  step4_1_sur = document.querySelector(".LabelBoavista")
+  step4_1_sur.classList.remove("step4_sur");
 
   step5_sur = document.querySelector("#puntoManaos")
   step5_sur.classList.remove("step5_sur");
@@ -436,6 +440,11 @@ function pasos_al_norte()
   step28_1_norte = document.querySelector(".LabelMiami")
   step28_1_norte.classList.add("step28_norte");
 
+  step29_norte = document.querySelector(".LabelMuro")
+  step29_norte.classList.add("step29_norte");
+  step29_1_norte = document.querySelector(".LabelRioBravo")
+  step29_1_norte.classList.add("step29_norte");
+
 }
 
 function deshacer_pasos_al_norte()
@@ -615,4 +624,8 @@ function deshacer_pasos_al_norte()
   step28_1_norte = document.querySelector(".LabelMiami")
   step28_1_norte.classList.remove("step28_norte");
 
+  step29_norte = document.querySelector(".LabelMuro")
+  step29_norte.classList.remove("step29_norte");
+  step29_1_norte = document.querySelector(".LabelRioBravo")
+  step29_1_norte.classList.remove("step29_norte");
 }

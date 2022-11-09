@@ -83,7 +83,7 @@ h2
                 
                 &:hover 
                 {
-                    border: 1.4px solid $limon;
+                    border: 1.4px solid #fff;
                     cursor: pointer;
                 }
 
@@ -91,7 +91,7 @@ h2
                     width: 30px;
                     height: 30px;
                     fill: none;
-                    stroke: $limon;
+                   // stroke: $limon;
                     stroke-linejoin: round;
                     stroke-linecap: round;
                     stroke-width: 10px;
@@ -111,6 +111,14 @@ h2
     }
 }
 
+.trazo_sur {
+    stroke: $limon;
+}
+
+.trazo_norte {
+    stroke: $rosa;
+}
+
 .chequear {
     transition: stroke-dashoffset .5s;
   }
@@ -126,7 +134,7 @@ h2
 
 
 #puntoBuenosAires, .LabelBuenosAires, #puntoSantiago, .LabelSantiago, #puntoSalta, .LabelSalta, #puntoLima, .LabelLima, #puntoTumbes, #puntoBogotasur, .LabelBogotasur, 
- .LabelTumbes, #puntoTulcan, .LabelTulcan, #puntoQuito, .LabelQuito, .Labels_TrinidadyTobago, #puntoTrinidad, #puntoBoavista, #puntoManaos, .LabelManaos
+ .LabelTumbes, #puntoTulcan, .LabelTulcan, #puntoQuito, .LabelQuito, .Labels_TrinidadyTobago, #puntoTrinidad, #puntoBoavista, #puntoManaos, .LabelManaos, .LabelBoavista
 {
     opacity: 0;
 }
@@ -238,14 +246,16 @@ h2
 .Labels_BogotaNorte, #puntoBogotaNorte, .Labels_Medellin, #puntoMedellin, .LabelNecocli, #puntoNecocli, #puntoSanAndres, .Labels_SanAndres, #regionDarien, #regionSanAndresBluefields, 
 #puntoBluefields, #puntoMeteti, .LabelMeteti, .LabelBluefields, #puntoManagua, #puntoGuadalajara, .LabelGuadalajara, #puntoSonora, .LabelSonora, #puntoMonterrey, .LabelMonterrey,
 #puntoTijuana, .LabelTijuana, #puntoCiudadJuarez, .Labels_CiudadJuarez, #PuntoReynosa, .LabelReynosa, #puntoNuevoLaredo, .LabelNuevoLaredo, #puntoNogales, .LabelNogales, #regionHaitiFlorida,
-#puntoMiami, .LabelMiami 
+#puntoMiami, .LabelMiami, .LabelMuro, .LabelRioBravo 
 {
     opacity: 0;
 }
 
+
 .step1_norte //#lineaPtoPrincipeBrasil, #lineaPtoPrincipeSantiago
 {
     animation: migrar 5s 0s ease 1 forwards;
+    //stroke-dasharray: 5 5;
 }
 
 .step2_norte //.LabelSantiagoNorte, #puntoSantiagoNorte
@@ -374,6 +384,11 @@ h2
     animation: migrar 5s 18s ease 1 forwards;
 }
 
+.step29_norte //.LabelMuro, .LabelRioBravo
+{
+    animation: aparecer 0.5s 18.5s ease 1 forwards;
+}
+
 .step27_norte //#regionHaitiFlorida 
 {
     animation: aparecer_region 2s 19s ease 1 forwards;
@@ -409,6 +424,13 @@ h2
 }
 
 @keyframes migrar
+  {
+    to {
+          stroke-dashoffset: 0;
+        }
+  }
+
+@keyframes migrar_en_avion
   {
     to {
           stroke-dashoffset: 0;
