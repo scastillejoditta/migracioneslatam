@@ -21,7 +21,7 @@ h2
 {
     position: relative;
     padding: 0;
-    margin: 0;
+    margin: 100px 0 0 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -131,6 +131,30 @@ h2
             font-family: 'leyenda', sans-serif;
             font-size: 0.8em;
         }
+    }
+}
+
+.footer
+{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 3em 0 3em 0;
+
+    &__logo
+    {
+        width: 15%;
+        margin: 1em;
+
+        &-img
+        {
+            width: 100%; 
+        }
+       
     }
 }
 
@@ -705,5 +729,13 @@ h2
     .news__content
     {
         width: 100%;
+    }
+}
+
+@media (max-width: 624px)
+{
+    .footer__logo
+    {
+        width: 40%;
     }
 }

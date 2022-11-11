@@ -48,7 +48,7 @@ h2 {
 .container {
   position: relative;
   padding: 0;
-  margin: 0;
+  margin: 100px 0 0 0;
   width: 100%;
   display: flex;
   flex-direction: column; }
@@ -122,6 +122,21 @@ h2 {
     .container__footer-text {
       font-family: 'leyenda', sans-serif;
       font-size: 0.8em; }
+
+.footer {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 3em 0 3em 0; }
+  .footer__logo {
+    width: 15%;
+    margin: 1em; }
+    .footer__logo-img {
+      width: 100%; }
 
 .trazo_sur {
   stroke: #d6fa48; }
@@ -597,6 +612,42 @@ h2 {
 .image48 {
   background: url("../assets/images/image48.jpg") no-repeat; }
 
+.image49 {
+  background: url("../assets/images/image49.jpg") no-repeat; }
+
+.image50 {
+  background: url("../assets/images/image50.jpg") no-repeat; }
+
+.image51 {
+  background: url("../assets/images/image51.jpg") no-repeat; }
+
+.image52 {
+  background: url("../assets/images/image52.jpg") no-repeat; }
+
+.image53 {
+  background: url("../assets/images/image53.jpg") no-repeat; }
+
+.image54 {
+  background: url("../assets/images/image54.jpg") no-repeat; }
+
+.image55 {
+  background: url("../assets/images/image55.jpg") no-repeat; }
+
+.image56 {
+  background: url("../assets/images/image56.jpg") no-repeat; }
+
+.image57 {
+  background: url("../assets/images/image57.jpg") no-repeat; }
+
+.image58 {
+  background: url("../assets/images/image58.jpg") no-repeat; }
+
+.image59 {
+  background: url("../assets/images/image59.jpg") no-repeat; }
+
+.image60 {
+  background: url("../assets/images/image60.jpg") no-repeat; }
+
 @media (max-width: 822px) {
   .container {
     position: inherit;
@@ -617,6 +668,10 @@ h2 {
 @media (max-width: 769px) {
   .news__content {
     width: 100%; } }
+
+@media (max-width: 624px) {
+  .footer__logo {
+    width: 40%; } }
 
 .uuid-4339255c-2858-4046-b90f-ef6728ece903, .uuid-62cbd9a9-5295-49c8-82a9-45ba34bce6e8, .uuid-3abf9716-6f65-4101-a42b-7bc44f6c40bc, .uuid-67f7b9a7-67aa-49c0-b1bd-7aded18b7cb9, .uuid-b5783edd-782b-45c3-9a63-35ee543bdb5f, .uuid-94c0966a-4fe7-4a1a-ab5a-16991180886a, .uuid-a72aaf1d-d473-461f-9584-20c17331e294, .uuid-5f698cf1-35e7-4d33-ac94-fd0dbf396519, .linea_sur, .uuid-2c71ae4f-3c13-4bde-8c32-bf1b35f421f2, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-7be7d557-ce95-41b7-abcc-f5a1a2c49ca6, .uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252, .uuid-b7e2e19c-3c85-4d20-869f-4b8cba3674dc, .uuid-9602996c-3b4a-49bc-81b3-ae13a6a557e8, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
   fill: none; }
