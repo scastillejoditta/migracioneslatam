@@ -660,10 +660,9 @@ h2 {
       margin: 3em auto 1em auto;
       position: inherit;
       width: 90%; }
-  /*.news
-    {
-        margin: 3em auto 0 auto;
-    }*/ }
+  #dvConvenciones {
+    transform: translate(-1500px, 400px);
+    scale: 250%; } }
 
 @media (max-width: 769px) {
   .news__content {
