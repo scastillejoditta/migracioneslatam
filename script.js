@@ -445,6 +445,15 @@ function pasos_al_norte()
   step29_1_norte = document.querySelector(".LabelRioBravo")
   step29_1_norte.classList.add("step29_norte");
 
+  step30_norte = document.querySelector(".LabelRioBranco")
+  step30_norte.classList.add("step30_norte");
+  step30_1_norte = document.querySelector("#puntoRioBranco")
+  step30_1_norte.classList.add("step30_norte");
+
+  step31_norte = document.querySelector(".LabelAssis")
+  step31_norte.classList.add("step31_norte");
+  step31_1_norte = document.querySelector("#puntoAssis")
+  step31_1_norte.classList.add("step31_norte");
 }
 
 function deshacer_pasos_al_norte()
@@ -628,4 +637,14 @@ function deshacer_pasos_al_norte()
   step29_norte.classList.remove("step29_norte");
   step29_1_norte = document.querySelector(".LabelRioBravo")
   step29_1_norte.classList.remove("step29_norte");
+
+  step30_norte = document.querySelector(".LabelRioBranco")
+  step30_norte.classList.remove("step30_norte");
+  step30_1_norte = document.querySelector("#puntoRioBranco")
+  step30_1_norte.classList.remove("step30_norte");
+
+  step31_norte = document.querySelector(".LabelAssis")
+  step31_norte.classList.remove("step31_norte");
+  step31_1_norte = document.querySelector("#puntoAssis")
+  step31_1_norte.classList.remove("step31_norte");
 }

@@ -15,8 +15,14 @@
   filter: url(#uuid-8e5786c1-e23a-4f74-afa2-ffb1fac197d4);
 }
 
-.uuid-4339255c-2858-4046-b90f-ef6728ece903, .uuid-3abf9716-6f65-4101-a42b-7bc44f6c40bc, .uuid-67f7b9a7-67aa-49c0-b1bd-7aded18b7cb9, .uuid-b5783edd-782b-45c3-9a63-35ee543bdb5f, .uuid-94c0966a-4fe7-4a1a-ab5a-16991180886a, .uuid-a72aaf1d-d473-461f-9584-20c17331e294, .uuid-5f698cf1-35e7-4d33-ac94-fd0dbf396519, .linea_sur, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-7be7d557-ce95-41b7-abcc-f5a1a2c49ca6, .uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252, .uuid-b7e2e19c-3c85-4d20-869f-4b8cba3674dc, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
+.uuid-4339255c-2858-4046-b90f-ef6728ece903, .uuid-3abf9716-6f65-4101-a42b-7bc44f6c40bc, .uuid-67f7b9a7-67aa-49c0-b1bd-7aded18b7cb9, .uuid-b5783edd-782b-45c3-9a63-35ee543bdb5f, .uuid-94c0966a-4fe7-4a1a-ab5a-16991180886a, .uuid-5f698cf1-35e7-4d33-ac94-fd0dbf396519, .linea_sur, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-7be7d557-ce95-41b7-abcc-f5a1a2c49ca6, .uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252, .uuid-b7e2e19c-3c85-4d20-869f-4b8cba3674dc, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
   stroke-width: 3px;
+}
+
+.uuid-a72aaf1d-d473-461f-9584-20c17331e294
+{
+  stroke-width: 10px;
+  opacity: .5;
 }
 
 .uuid-62cbd9a9-5295-49c8-82a9-45ba34bce6e8 {
@@ -41,7 +47,7 @@
   opacity: .5;
 }
 
-.linea_sur, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252 {
+.linea_sur, .uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252 {
   stroke: $limon;
 }
 
@@ -71,14 +77,18 @@
   fill:#fa5948;
   font-weight: bold;
   font-size: 20px;
+  stroke: #fa5948;
+  stroke-width: .05px;
 }
 .LabelRioBravo
 {
   fill:$azul_oscuro;
   font-weight: bold;
   font-size: 20px;
+  stroke: $azul_oscuro;
+  stroke-width: .05px;
 }
-.uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
+.uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
   stroke: $azul;
 }
 
@@ -120,8 +130,13 @@
   clip-path: url(#uuid-fd4c527c-da4a-4c7e-8462-e6b5d7abeb65);
 }
 
-.verdeoscuro {
-  fill: $verde_oscuro;
+.letraBlanca, .uuid-4fd0de65-4d0b-456d-9a7d-8ecd664690e8 {
+  fill: #fff;
+}
+
+.verdeoscuro 
+{
+  fill:$verde_oscuro;
 }
 
 .verdeclaro {
@@ -129,19 +144,15 @@
 }
 
 .uuid-136bee12-3ae2-43fc-9579-0b896ada1abc, .croquispais, .uuid-5e2140d0-fa7b-4289-a058-36d3a330ce76, .uuid-e01d4d11-222f-4390-9981-139201c63b0f {
-  fill: #006e70;
+  fill: $verde;
 }
 
 .uuid-030a05dc-c15b-4630-a152-1c3eefe5c3b2, .uuid-e7523470-86dd-4d54-bea2-e57ed52eb9c4 {
-  fill: #008787;
-}
-
-.letraBlanca, .uuid-4fd0de65-4d0b-456d-9a7d-8ecd664690e8 {
-  fill: #fff;
+  fill: $verde_medio;
 }
 
 .uuid-ba31de6d-a386-48e4-97d7-818e21b43850 {
-  fill: #00a09c;
+  fill: $verde_claro;
 }
 
 .uuid-0c46f753-bcd0-41b5-afe8-fd84b5e16313 {
@@ -283,7 +294,7 @@
   fill-rule: evenodd;
 }
 
-.Labels_otrospaises, #dvConvenciones, .RutaNorte, #dvFlor, .RutaSur  {opacity: 0;}
+.Labels_otrospaises, .RutaNorte, #dvFlor, .RutaSur  {opacity: 0;}
 
 .Labels_Chile {
   transform:translate(-50px,-205px);
@@ -329,4 +340,37 @@
 .Labels_Belice
 {
   transform:translate(10px,-10px);
+}
+
+#dvConvenciones
+{
+  display: block;
+}
+
+#cTierraSur
+{
+  transform:translate(1px,8px);
+}
+
+#cTierraNorte
+{
+  transform:translate(1px,-1px);
+}
+
+#cMar
+{
+  scale:(53%);
+  transform:translate(1760px,-270px);
+}
+
+.delgada
+{
+  font-family: 'leyenda', sans-serif;
+  font-size: 1.1em;
+}
+
+.gruesa
+{
+  font-family: 'titulos', sans-serif;
+  font-size: 1.5em;
 }
