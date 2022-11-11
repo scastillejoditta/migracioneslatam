@@ -175,6 +175,20 @@ function pasos_al_sur()
   step20_1_sur = document.querySelector(".LabelBuenosAires")
   step20_1_sur.classList.add("step20_sur");
 
+  step21_sur = document.querySelector("#puntoDesaguadero")
+  step21_sur.classList.add("step21_sur");
+  step21_1_sur = document.querySelector(".LabelDesaguadero")
+  step21_1_sur.classList.add("step21_sur");
+
+  step22_sur = document.querySelector("#puntoLaPaz")
+  step22_sur.classList.add("step22_sur");
+  step22_1_sur = document.querySelector(".LabelLaPaz")
+  step22_1_sur.classList.add("step22_sur");
+
+  step23_sur = document.querySelector("#puntoAtacama")
+  step23_sur.classList.add("step23_sur");
+  step23_1_sur = document.querySelector(".LabelAtacama")
+  step23_1_sur.classList.add("step23_sur");
 }
 
 function dehacer_pasos_al_sur()
@@ -260,6 +274,21 @@ function dehacer_pasos_al_sur()
   step20_sur.classList.remove("step20_sur");
   step20_1_sur = document.querySelector(".LabelBuenosAires")
   step20_1_sur.classList.remove("step20_sur");
+
+  step21_sur = document.querySelector("#puntoDesaguadero")
+  step21_sur.classList.remove("step21_sur");
+  step21_1_sur = document.querySelector(".LabelDesaguadero")
+  step21_1_sur.classList.remove("step21_sur");
+
+  step22_sur = document.querySelector("#puntoLaPaz")
+  step22_sur.classList.remove("step22_sur");
+  step22_1_sur = document.querySelector(".LabelLaPaz")
+  step22_1_sur.classList.remove("step22_sur");
+
+  step23_sur = document.querySelector("#puntoAtacama")
+  step23_sur.classList.remove("step23_sur");
+  step23_1_sur = document.querySelector(".LabelAtacama")
+  step23_1_sur.classList.remove("step23_sur");
 
 }
 

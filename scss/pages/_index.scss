@@ -115,7 +115,7 @@ h2
     &__footer
     {
         width: 100%;
-        background-color: $azul_oscuro;
+       // background-color: $azul_oscuro;
         bottom: 30px;
         left: 0;
         padding: 1em 2em 1em 2em;
@@ -157,7 +157,8 @@ h2
 
 
 #puntoBuenosAires, .LabelBuenosAires, #puntoSantiago, .LabelSantiago, #puntoSalta, .LabelSalta, #puntoLima, .LabelLima, #puntoTumbes, #puntoBogotasur, .LabelBogotasur, 
- .LabelTumbes, #puntoTulcan, .LabelTulcan, #puntoQuito, .LabelQuito, .Labels_TrinidadyTobago, #puntoTrinidad, #puntoBoavista, #puntoManaos, .LabelManaos, .LabelBoavista
+ .LabelTumbes, #puntoTulcan, .LabelTulcan, #puntoQuito, .LabelQuito, .Labels_TrinidadyTobago, #puntoTrinidad, #puntoBoavista, #puntoManaos, .LabelManaos, .LabelBoavista, 
+ #puntoDesaguadero, .LabelDesaguadero, #puntoLaPaz, .LabelLaPaz, #puntoAtacama, .LabelAtacama
 {
     opacity: 0;
 }
@@ -222,6 +223,16 @@ h2
     animation: aparecer .5s 7.5s ease 1 forwards;
 }
 
+.step21_sur //#puntoDesaguadero, .LabelDesaguadero
+{
+    animation: aparecer .5s 8.8s ease 1 forwards;
+}
+
+.step22_sur //#puntoLaPaz, .LabelLaPaz
+{
+    animation: aparecer .5s 9.1s ease 1 forwards;
+}
+
 .step13_sur //#lineaCamanaSalta
 {
     animation: migrar 8s 8.3s ease 1 forwards;
@@ -230,6 +241,11 @@ h2
 .step14_sur //#lineaCamanaMariaElena
 {
     animation: migrar 4s 8.3s ease 1 forwards;
+}
+
+.step23_sur //#puntoAtacama, .LabelAtacama 
+{
+    animation: aparecer .5s 9.2s ease 1 forwards;
 }
 
 .step15_sur //#lineaMariaElenaSalta

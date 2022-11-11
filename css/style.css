@@ -112,7 +112,6 @@ h2 {
       color: #00d1c1; }
   .container__footer {
     width: 100%;
-    background-color: #020a2e;
     bottom: 30px;
     left: 0;
     padding: 1em 2em 1em 2em;
@@ -138,7 +137,8 @@ h2 {
   stroke-dashoffset: 100%; }
 
 #puntoBuenosAires, .LabelBuenosAires, #puntoSantiago, .LabelSantiago, #puntoSalta, .LabelSalta, #puntoLima, .LabelLima, #puntoTumbes, #puntoBogotasur, .LabelBogotasur,
-.LabelTumbes, #puntoTulcan, .LabelTulcan, #puntoQuito, .LabelQuito, .Labels_TrinidadyTobago, #puntoTrinidad, #puntoBoavista, #puntoManaos, .LabelManaos, .LabelBoavista {
+.LabelTumbes, #puntoTulcan, .LabelTulcan, #puntoQuito, .LabelQuito, .Labels_TrinidadyTobago, #puntoTrinidad, #puntoBoavista, #puntoManaos, .LabelManaos, .LabelBoavista,
+#puntoDesaguadero, .LabelDesaguadero, #puntoLaPaz, .LabelLaPaz, #puntoAtacama, .LabelAtacama {
   opacity: 0; }
 
 .step1_sur {
@@ -177,11 +177,20 @@ h2 {
 .step12_sur {
   animation: aparecer .5s 7.5s ease 1 forwards; }
 
+.step21_sur {
+  animation: aparecer .5s 8.8s ease 1 forwards; }
+
+.step22_sur {
+  animation: aparecer .5s 9.1s ease 1 forwards; }
+
 .step13_sur {
   animation: migrar 8s 8.3s ease 1 forwards; }
 
 .step14_sur {
   animation: migrar 4s 8.3s ease 1 forwards; }
+
+.step23_sur {
+  animation: aparecer .5s 9.2s ease 1 forwards; }
 
 .step15_sur {
   animation: migrar 4s 9s ease 1 forwards; }
@@ -887,6 +896,12 @@ h2 {
 .gruesa {
   font-family: 'titulos', sans-serif;
   font-size: 1.5em; }
+
+.Labels_Andes {
+  transform: translate(-10px, -20px); }
+
+.Labels_Bolivia {
+  transform: translate(-50px, -90px); }
 
 .cls-1 {
   opacity: .12;
