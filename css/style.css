@@ -48,7 +48,7 @@ h2 {
 .container {
   position: relative;
   padding: 0;
-  margin: 100px 0 0 0;
+  margin: 0 0 0 0;
   width: 100%;
   display: flex;
   flex-direction: column; }
@@ -468,6 +468,20 @@ h2 {
     background-color: #d6fa48;
     color: #0584ff; }
 
+.btn_1 {
+  display: block;
+  width: 100px;
+  color: #fff;
+  background-color: #00a09c;
+  border: none;
+  border-radius: 6px;
+  font-family: 'leyenda', sans-serif;
+  font-size: 1em;
+  padding: 3px 10px 4px 20px; }
+  .btn_1:hover {
+    background-color: #00a09c;
+    color: #d6fa48; }
+
 .image1 {
   background: url("../assets/images/image1.jpg") no-repeat; }
 
@@ -556,7 +570,7 @@ h2 {
   background: url("../assets/images/image29.jpg") no-repeat; }
 
 .image30 {
-  background: url("../assets/images/image20.jpg") no-repeat; }
+  background: url("../assets/images/image56.jpg") no-repeat; }
 
 .image31 {
   background: url("../assets/images/image31.jpg") no-repeat; }
