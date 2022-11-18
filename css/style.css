@@ -154,15 +154,16 @@ h2 {
         align-items: center;
         font-size: 1em;
         margin: 10px auto;
-        color: #000;
         padding: 5px auto;
         border: none;
         width: 100%;
         cursor: pointer;
         transition: background-color .3s linear; }
-        .header__content-list li:hover {
-          color: #0048d8;
-          font-family: 'titulos', sans-serif; }
+        .header__content-list li a {
+          color: #000; }
+          .header__content-list li a:hover {
+            color: #0048d8;
+            font-family: 'titulos', sans-serif; }
       .header__content-list li:nth-child(3) a {
         padding: 5px 10px;
         background-color: #d6fa48;
