@@ -55,7 +55,16 @@ div_menu.addEventListener("mouseout", desactivar_menu, false);
     
     function activar_menu()
     {   
-      div_menu.style.display="block";
+      var activado = div_menu.style.display;
+      if(activado == "block")
+      {
+        div_menu.style.display="none";
+      }
+      else
+      {
+        div_menu.style.display="block";
+      }
+      
     }
     
     function desactivar_menu()
