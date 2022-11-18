@@ -48,7 +48,7 @@ var frontList;
 
 var menu = document.getElementById("btn_mobile");
 var div_menu = document.getElementById("nav_mobile");
-menu.addEventListener("mouseover", activar_menu, false);
+//menu.addEventListener("mouseover", activar_menu, false);
 //menu.addEventListener("mouseout", desactivar_menu, false);
 div_menu.addEventListener("mouseover", activar_menu, false);
 div_menu.addEventListener("mouseout", desactivar_menu, false);
