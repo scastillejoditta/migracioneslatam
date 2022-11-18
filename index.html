@@ -42,10 +42,39 @@
 </head>
 <body>
     <main>
-    
-      <section class="container">
+      <header class="header">
+        <div class="header__content">
+            <a href="index.html" >
+                <img src="assets/images/Logo_PuentesdeComunicacion_2022.png" alt="Puentes de Comunicación" class="header__content-logo" />
+            </a>
 
+            <nav>
+                <ul class="header__content-navbar">
+                    <li><a href="https://puentesdecomunicacion.org/">INICIO</a></li>
+                    <li><a href="https://puentesdecomunicacion.org/guia-2022/">GUÍA 2022</a></li>
+                    <li><a href="https://puentesdecomunicacion.org/dialogos-itinerantes/">DIÁLOGOS</a></li>
+                </ul>
+            </nav>
+            <svg id="btn_mobile" class="header__content-mobile" height="64" version="1.1" width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+              <g>
+              <path class="mLine" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="M5.0916789,20.818994C5.0916789,20.818994,58.908321,20.818994,58.908321,20.818994"></path>
+              <path class="mLine" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="m 5.1969746,31.909063 53.8166424,0"></path>
+              <path class="mLine" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="M5.0916788,42.95698C5.0916788,42.95698,58.908321,42.95698,58.908321,42.95698"></path>
+              </g>
+            </svg>
+        </div>
+        <nav id="nav_mobile" class="header__content-list">
+          <ul>
+              <li><a href="https://puentesdecomunicacion.org/">INICIO</a></li>
+              <li><a href="https://puentesdecomunicacion.org/guia-2022/">GUÍA 2022</a></li>
+              <li><a href="https://puentesdecomunicacion.org/dialogos-itinerantes/">DIÁLOGOS</a></li>
+          </ul>
+        </nav>
+    </header>
       
+    <section class="container">
+
+  
         <div class="container__caption">
           <h1>Pasos errantes que redibujan el continente</h1>
           <p>Durante 2022, los países de América Latina mantuvieron el enfoque y la narrativa de la criminalización al ejercicio de migrar, que es un derecho humano.</p>
@@ -817,7 +846,9 @@
                             <path id="lineaMonterreyReynosa" class="uuid-3abf9716-6f65-4101-a42b-7bc44f6c40bc linea_norte" d="M533.6999999999999,520.4000000000001C534.5999999999999,520.6000000000001 537.4,518.4000000000002 538.3,518.1000000000001C539.1999999999999,517.8000000000001 540.3,518.1000000000001 541.3,517.5000000000001C542.3,516.9000000000001 542.1999999999999,516.5000000000001 543.4,516.5000000000001C544.6,516.5000000000001 545.1,516.3000000000001 546.1,515.9000000000001C547.1,515.5000000000001 547.6,515.7 549.2,515.3000000000001C550.8000000000001,514.9000000000001 551.8000000000001,513.8000000000001 552.6,512.7C554.4,510.2 557.5,507.6 560.9,506.5C562.4,506 563.4999999999999,505.3 565.3,504.6C567.1,503.90000000000003 568.1,503 570.4,503.3C571.9,503.4 572.8,504 574.9,504.7C577,505.4 579.8,506.09999999999997 581.5,507.2"/>
                             <path id="lineaOaxacaReynosa" class="uuid-3abf9716-6f65-4101-a42b-7bc44f6c40bc linea_norte" d="M661.3,810.7c-2.9-.5-7.3-4.3-10.1-6.1-2-1.2-4.8-3.4-6.3-5.3-1.7-2-2.4-4.4-4.3-6.3s-2.8-2.3-4-3.5-3.1-3.1-4.8-4.6c-3.8-3.4-7.9-4.6-5.7-8.6,1.4-2.6,4.1-4.1,5-6.9s-.7-5.5-2-8.4c-1.6-3.5-1.7-6.9-2.6-10.7-1-4.2-4.3-5.7-6.2-9.7-3.2-6.7-10.4-10.4-13.7-17.1-1.8-3.7-4.4-5.8-6.2-9.6s-2.7-4.5-3.2-7.8c-.7-5.1-2.5-9.7-2.9-15-.4-5-.3-11.5-3.1-15.5s-3.5-3.7-3.4-6.9c.2-3,1.8-5.2,1.6-8.4-.2-4.1,.4-8.2-.6-12.1-.9-3.3-1.6-5.6-1.6-9.2,0-1.8,.7-7.9-.4-9.3s-3-.2-3.8-1.7c-.8-1.6,.5-2.7,1.3-3.9,1.2-1.9,2.8-3.3,2.6-5.8s1.3-9,.3-11.9c-1.3-3.5-4.4-3.2-4.5-7.2,0-2.5,.2-5,.6-7.4,.8-4.6,1.2-4.9-.9-8.5-2.8-4.8-4.3-11.7-2.8-17.1s11.2-8.7,7.9-16.5c-1.7-3.9-7.6-14.2-2.9-17.7,0-3.7-.5-8.2-.3-11.8,.2-3,.5-8.8-1-11.1"/>
                           
+                            
                             <path id="regionHaitiFlorida" class="uuid-d8b1075b-d275-4f06-888e-078744c14c9e linea_norte" d="M1365.1,718c-108.2-45.9-167-86.1-214.7-128.1-11.7-10.3-38.8-44.4-45.7-58-10.8-21.3-12.4-47.6-1.7-68.9,10.6-21.3,25.3-32.4,49.7-37.1,21.3-4.1,44.1,.4,63.5,9.6,19.4,9.2,43.4,24.2,71.3,55.9,45.7,52.2,62.7,92.7,99.5,236.9-6-3.5-16.8-8.2-21.7-10.3Z"/>
+                            
 
                             <polyline id="lineaMuroUSA" class="uuid-62cbd9a9-5295-49c8-82a9-45ba34bce6e8 linea_norte" points="16.9 235.7 94.4 234.4 96 237.2 94.8 239.8 204.9 291.2 297.6 293.3 298.2 281.3 350.6 283"/>
                             <path id="lineaRioBravo" class="uuid-4339255c-2858-4046-b90f-ef6728ece903 linea_norte" d="M350.6,283l6.1,3.8,5.1,7.4,2.8,3.4,.6,3h3.4c0,.1,2.9,4.5,2.9,4.5l-1.1,3.2,5,1.9,4.9,4.1-.4,2.9-1.6,2.5,4,1.2,4.4,2.9,2.9,4.7,.7,7.2,2.2,2.7,1.9,.4,1.1,2.5,3.7,3.5,.2,5-1.9,1.4-3.7,.9v2.4l5.6,6.7,4.4,5.3,1.4,4.6-.2,1.8h2c0,0,2.7,2.6,2.7,2.6h2c0-.1,3.1,1.1,3.1,1.1l1.2,2.4,.4,2.1,2.2,2.2h3.7c0,0,6.6,3.4,6.6,3.4l.9,2.2,5.4,1.8,6.5,3.4,1.9,2.2,2.7,.5,3-1.2,.6-2,4.6-3.7,3.2-.8,.7-2.7-.6-1.7,2.8-3.6,4.7-8.8,3.4-3.4,3.7-1.4,2.4,.6,.6,1,2.6-.5,1.8-3.9h5.8c0,0,5.6,.9,5.6,.9l6.1-.5,2.5,1.2,1.4,1.9,4.2-.8,4.3,2.2,2.8,4.8,6.3,5.3,5,7.8,2.4,6.8,1.8,2.8,.8,4.9,.5,7.7,3.5,1.8,1.6,4.5,4.2,11.9,2.7,1.8,1.4,4.1,5,2.7,1.5,6.4,3,5.4,5.4,5.6-.6,5.8-.6,6v1.7s.5,2,.5,2l6.5,19-.4,8.5,2.7,3.3,.8,.9,3.8,1.4,4.1-.6,4.1,2.3,5.3,5.2,10.6,3.6,6.1,3.1,5.9,1.4,2,4,2.8,1.4-1.6,4.7,5.6-3.7,1.9,1.4"/>
@@ -1058,6 +1089,9 @@
 
                               <ellipse id="puntoMeteti" class="uuid-30343332-bb3b-422d-9c24-82881d59cd0f" cx="1194.1" cy="1110.5" rx="8.6" ry="8.7"/>
                               <text class="uuid-19d2cc62-6a07-41a6-8584-99fa06330389 LabelMeteti" transform="translate(1180 1090)"><tspan x="0" y="0">METETI</tspan></text>
+
+                              <ellipse id="puntoPasoCanoas" class="uuid-30343332-bb3b-422d-9c24-82881d59cd0f" cx="1045" cy="1115" rx="8.6" ry="8.7"/>
+                              <text class="uuid-19d2cc62-6a07-41a6-8584-99fa06330389 LabelPasoCanoas" transform="translate(1030 1100)"><tspan x="0" y="0">PASO CANOAS</tspan></text>
 
                               <ellipse id="puntoBluefields" class="uuid-30343332-bb3b-422d-9c24-82881d59cd0f" cx="1021.3" cy="1003.9" rx="8.6" ry="8.7"/>
                               <text class="uuid-19d2cc62-6a07-41a6-8584-99fa06330389 LabelBluefields" transform="translate(990 983.3)"><tspan x="0" y="0">BLUEFIELDS</tspan></text>
@@ -1720,12 +1754,13 @@
                       <tspan x="15" y="28">Paso al sur</tspan>
                       <tspan x="15" y="56">Trayectos por tierra</tspan>
                       <tspan x="15" y="84">Trayectos por aire</tspan>
-                      <tspan x="15" y="112">Trayectos por mar</tspan>
-                      <tspan x="-39" y="150">Altitud</tspan>
+                      <tspan x="15" y="112">Pasos irregulares con</tspan>
+                      <tspan x="15" y="132">múltiples rutas</tspan>
+                      <tspan x="15" y="160">Altitud:</tspan>
                       <tspan x="-35" y="185">0 a 100</tspan>
                       <tspan x="130" y="185">6.000 o más</tspan>
-                      <tspan x="-30" y="205">MSNM</tspan>
-                      <tspan x="130" y="205">MSNM</tspan>
+                      <tspan x="-30" y="210">MSNM</tspan>
+                      <tspan x="130" y="210">MSNM</tspan>
                       <tspan x="-39" y="240">MSNM: Metros Sobre el Nivel del Mar.</tspan>
                     </text>
                     
@@ -1759,7 +1794,7 @@
           </g>
         </svg>
 
-        <div class="container__footer">
+        <div id="news_section" class="container__footer">
           <p class="container__footer-text">
             El mapa 'Pasos errantes que redibujan el continente' es una aproximación a las principales rutas migratorias (regulares e irregulares) dentro de América Latina en 2022, no incluye información de migración internacional. Los puntos simbolizan sitios de paso y no necesariamente de origen de los migrantes: en todo el trayecto se suman a estas rutas personas con distintas nacionalidades, así como otras se van quedando. 
             <span class="container__footer-bold">Fuentes de datos:</span> 
@@ -1769,6 +1804,20 @@
             <span class="container__footer-bold"> Investigación y desarrollo:</span> Sara Castillejo Ditta.
           </p>
         </div>
+
+
+          <a href="#news_section">
+            <div id="ancla2" class="mouse-scroll">
+              <div class="mouse">
+                <div class="mouse-in"></div>
+              </div>
+              <div>
+                  <span class="down-arrow-1"></span>
+                  <span class="down-arrow-2"></span>
+                  <span class="down-arrow-3"></span>
+               </div>
+            </div>
+            </a>
       </section>
 
       <section class="news">
@@ -2466,6 +2515,7 @@
 
       </section>
   </main>
+  
   <footer>
     <div class="footer">
       <a class="footer__logo" href="https://puentesdecomunicacion.org/recursos/guia-puentes-de-comunicacion-como-cubrir-la-migracion-y-el-refugio-venezolanos-guia-y-glosario-para-periodistas-comunicadores-y-medios/" target="_blank">

@@ -46,6 +46,23 @@ var frontList;
         }
     }
 
+var menu = document.getElementById("btn_mobile");
+var div_menu = document.getElementById("nav_mobile");
+menu.addEventListener("mouseover", activar_menu, false);
+//menu.addEventListener("mouseout", desactivar_menu, false);
+div_menu.addEventListener("mouseover", activar_menu, false);
+div_menu.addEventListener("mouseout", desactivar_menu, false);
+    
+    function activar_menu()
+    {   
+      div_menu.style.display="block";
+    }
+    
+    function desactivar_menu()
+    {  
+      div_menu.style.display="none";
+    }
+
 var checkBox_norte = document.querySelector("#check_norte"),
 path_norte = document.querySelector(".trazo_norte"),
 length_norte = path_norte.getTotalLength();
@@ -483,6 +500,11 @@ function pasos_al_norte()
   step31_norte.classList.add("step31_norte");
   step31_1_norte = document.querySelector("#puntoAssis")
   step31_1_norte.classList.add("step31_norte");
+
+  step32_norte = document.querySelector(".LabelPasoCanoas")
+  step32_norte.classList.add("step32_norte");
+  step32_1_norte = document.querySelector("#puntoPasoCanoas")
+  step32_1_norte.classList.add("step32_norte");
 }
 
 function deshacer_pasos_al_norte()
@@ -676,4 +698,9 @@ function deshacer_pasos_al_norte()
   step31_norte.classList.remove("step31_norte");
   step31_1_norte = document.querySelector("#puntoAssis")
   step31_1_norte.classList.remove("step31_norte");
+
+  step32_norte = document.querySelector(".LabelPasoCanoas")
+  step32_norte.classList.remove("step32_norte");
+  step32_1_norte = document.querySelector("#puntoPasoCanoas")
+  step32_1_norte.classList.remove("step32_norte");
 }
