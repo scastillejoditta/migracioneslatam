@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* fuentes locales*/
 @font-face {
   font-family: 'texto';
@@ -851,6 +852,362 @@ h2 {
   .footer__logo {
     width: 40%; } }
 
+p {
+  font-family: 'texto', sans-serif;
+  margin-bottom: 1em;
+  line-height: 150%;
+  font-size: 1.1em; }
+
+p > a {
+  color: #0048d8;
+  border-bottom: solid 2px #0048d8; }
+  p > a:hover {
+    border-bottom: solid 2px #FF009D;
+    font-weight: bold; }
+
+i {
+  font-style: italic; }
+
+.header {
+  z-index: 3; }
+
+/* -------------------------------------------- */
+/* ------------ intro ------------------- */
+/* -------------------------------------------- */
+.intro {
+  position: relative;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 40px;
+  z-index: 2;
+  background-color: #fff; }
+  .intro__texto {
+    width: 50%;
+    padding-top: 2em; }
+
+.intro:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.1;
+  background-image: url("/assets/guia/005_A_la sala de puentes.svg"), url("/assets/guia/005_B_la sala de puentes.svg"), url("/assets/guia/006_B_la sala de puentes.svg");
+  background-repeat: repeat;
+  background-size: 130%;
+  background-position: top right; }
+
+.intro h1 {
+  font-family: 'titulos', sans-serif;
+  font-size: 3.8em;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #0048d8; }
+
+.intro h2 {
+  font-family: 'leyenda', sans-serif;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 2em;
+  text-align: center;
+  color: #0048d8; }
+
+.intro small {
+  color: #FF009D;
+  font-weight: bold;
+  font-size: 1em; }
+
+.autor, .cargo, .país {
+  font-size: 1em;
+  color: #0048d8; }
+
+.cargo {
+  font-style: italic;
+  display: block;
+  margin-bottom: 5px; }
+
+.país {
+  font-weight: bold; }
+
+.descargar__guia {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 5px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 7px;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0.8;
+  transition: all .6s; }
+  .descargar__guia img {
+    display: block;
+    width: 100px;
+    margin: 0;
+    padding: 0; }
+  .descargar__guia small {
+    margin: 5px 0;
+    color: #0048d8; }
+
+.descargar__guia:hover {
+  opacity: 1;
+  transform: translateY(-30px);
+  border: solid 1px #FF009D; }
+
+.descargar__guia:hover small {
+  color: #FF009D; }
+
+/*--------------------------------------------- */
+/*----------- botón descarga -------------- */
+/*--------------------------------------------- */
+#btn_guia {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  bottom: 40%;
+  right: 20px;
+  z-index: 3;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all .6s;
+  border: #0048d8 solid 1px; }
+  #btn_guia img {
+    width: 70%; }
+  #btn_guia small {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 2px 5px;
+    text-align: center;
+    background-color: #0048d8;
+    color: #fff; }
+  #btn_guia:hover {
+    transform: translateX(-30px);
+    border: #FF009D solid 1px; }
+  #btn_guia:hover small {
+    background-color: #FF009D; }
+
+/* -------------------------------------------- */
+/* ------------ Datos de resumen -------------- */
+/* -------------------------------------------- */
+.sverde {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2; }
+  .sverde h2 {
+    color: #FF009D;
+    font-size: 2.2em;
+    margin: 1.5em auto; }
+  .sverde__texto {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #747BAD; }
+
+.sverde:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+  background-image: url("/assets/guia/hojas_A.png");
+  background-repeat: repeat;
+  background-size: 50%;
+  background-position: top right; }
+
+.tres_datos {
+  margin: 60px auto;
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  max-width: 1000px; }
+
+.resumen_datos {
+  width: 30%; }
+  .resumen_datos img {
+    width: 100%; }
+  .resumen_datos p {
+    font-size: 0.8;
+    color: #747BAD;
+    text-align: left; }
+
+.resumen_datos .dato {
+  color: #0048d8;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 100%; }
+
+.sverde p span {
+  color: #0048d8;
+  font-weight: bold; }
+
+/* -------------------------------------------- */
+/* ------------ Bloque Chat ------------------- */
+/* -------------------------------------------- */
+.migranteschat {
+  margin-top: 10px;
+  min-width: 100%;
+  background-color: #f0f2f5;
+  display: grid;
+  grid-template-areas: ". encabezado ."  ". contenido ." ". pie .";
+  grid-template-columns: 20% auto 20%; }
+
+.migranteschat-encab {
+  background-color: #f0f2f5;
+  grid-area: encabezado;
+  padding: 5px 40px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  height: 60px;
+  position: sticky;
+  top: 80px;
+  z-index: 1; }
+
+.migranteschat-encab img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 1px #0041DB;
+  background-color: #fff; }
+
+.migranteschat-encab p {
+  margin-bottom: 0; }
+
+.migranteschat-encab p:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #0041DB; }
+
+.migranteschat-encab p:nth-child(2) {
+  font-weight: lighter;
+  font-size: 1em;
+  color: #54656f; }
+
+.migranteschat__chat {
+  grid-area: contenido;
+  background-image: url("/assets/guia/006_B_la sala de puentes.svg"), url("/assets/guia/005_A_la sala de puentes.svg");
+  background-size: auto;
+  background-position: top;
+  background-repeat: repeat;
+  background-color: #f1efec;
+  margin: 5px 40px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px; }
+
+.migranteschat__noti {
+  background-color: #fff;
+  width: 75%;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 25px -30px black; }
+
+.migranteschat__noti > span {
+  font-weight: lighter;
+  font-size: 0.8em;
+  color: #54656f;
+  align-self: flex-end; }
+
+.migranteschat__noti p:nth-child(1) {
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  font-size: 0.9em; }
+
+.miel {
+  color: #d9b670; }
+
+.verde {
+  color: #31af63; }
+
+.azul {
+  color: #50a4fd; }
+
+.rosa {
+  color: #e542a3; }
+
+.migranteschat__noti-msj > span {
+  color: #50a4fd; }
+
+.migranteschat__noti-link > img {
+  width: 100%;
+  border-radius: 5px; }
+
+.migranteschat__noti-link > small {
+  text-transform: uppercase;
+  margin-left: 5px;
+  border-bottom: solid 1px #0041DB;
+  color: #0041DB; }
+
+.migranteschat__noti-link > span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding-top: 5px;
+  margin: 5px 10px;
+  color: #000; }
+
+.migranteschat__noti-link:hover span {
+  color: #0041DB; }
+
+.migranteschat__noti-link:hover img {
+  border: 10px solid #0041DB; }
+
+@media (max-width: 1000px) {
+  .migranteschat {
+    grid-template-columns: 10% auto 10%; } }
+
+@media (max-width: 700px) {
+  .migranteschat {
+    grid-template-columns: auto;
+    grid-template-areas: "encabezado"  "contenido" "pie"; }
+  .migranteschat__chat {
+    margin: 5px; } }
+
+@media (max-width: 485px) {
+  .migranteschat-encab {
+    padding: 5px 20px;
+    gap: 10px; }
+  .migranteschat-encab p:nth-child(2) {
+    font-size: 0.8em;
+    line-height: 1.3; }
+  .migranteschat__noti {
+    width: 85%; } }
+
+@media (max-width: 300px) {
+  .migranteschat-encab {
+    padding: 5px 20px;
+    gap: 10px; }
+  .migranteschat-encab p:nth-child(1) {
+    font-size: 1.1em;
+    line-height: 1.4; }
+  .migranteschat__noti {
+    width: 95%; } }
+
 .uuid-4339255c-2858-4046-b90f-ef6728ece903, .uuid-62cbd9a9-5295-49c8-82a9-45ba34bce6e8, .uuid-3abf9716-6f65-4101-a42b-7bc44f6c40bc, .uuid-67f7b9a7-67aa-49c0-b1bd-7aded18b7cb9, .uuid-b5783edd-782b-45c3-9a63-35ee543bdb5f, .uuid-94c0966a-4fe7-4a1a-ab5a-16991180886a, .uuid-a72aaf1d-d473-461f-9584-20c17331e294, .uuid-5f698cf1-35e7-4d33-ac94-fd0dbf396519, .linea_sur, .uuid-2c71ae4f-3c13-4bde-8c32-bf1b35f421f2, .uuid-8bc3cb5e-edf1-45c7-bd2c-eecf312e5660, .uuid-7be7d557-ce95-41b7-abcc-f5a1a2c49ca6, .uuid-3ab6e76f-6df6-4d58-8104-81efb63b6b91, .uuid-4921643d-0751-4eb6-9524-28908df54c35, .uuid-4d9c5e96-3f29-4d5c-bc66-83572a291a35, .uuid-0d4653eb-82fa-4286-9fa7-98f4c41d2123, .uuid-fe70f76f-a1f0-44bf-8a50-0a5807f45f6e, .uuid-d8d60534-fe40-42ff-b575-c389c6b018b4, .uuid-cce030ae-c55b-4dbd-9e8d-6a851735f252, .uuid-b7e2e19c-3c85-4d20-869f-4b8cba3674dc, .uuid-9602996c-3b4a-49bc-81b3-ae13a6a557e8, .uuid-5f27e31e-0255-4bb4-adf9-b7435b035442, .uuid-3180d759-a00e-44e6-acc1-c269d91635e5 {
   fill: none; }
 
@@ -1135,183 +1492,3 @@ h2 {
 
 .Labels_Bolivia {
   transform: translate(-50px, -90px); }
-
-.cls-1 {
-  opacity: .12;
-  fill: #000;
-  animation: Latam .8s 10s ease 1 forwards; }
-
-@keyframes Latam {
-  from {
-    fill: transparent;
-    stroke: #000;
-    stroke-width: 4px;
-    stroke-dasharray: 1700;
-    stroke-dashoffset: 1700; }
-  to {
-    stroke-dashoffset: 0; } }
-
-.cls-4 {
-  fill: transparent;
-  stroke: #e34038;
-  stroke-width: 15px;
-  stroke-dasharray: 750;
-  stroke-dashoffset: 750;
-  animation: muro .8s 8.5s ease 1 forwards; }
-
-@keyframes muro {
-  to {
-    stroke-dashoffset: 400; } }
-
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes parpadear {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes cerrar_pais {
-  0% {
-    fill: #000;
-    opacity: .12; }
-  100% {
-    fill: #d5f84a;
-    opacity: 1; } }
-
-.cls-5 {
-  fill: #000;
-  opacity: .12;
-  animation: cerrar_pais .8s 9.5s ease 1 forwards; }
-
-/* puntos */
-.cls-6 {
-  fill: #d5f84a;
-  opacity: 0;
-  cursor: pointer; }
-
-/* .darien {animation: aparecer .5s 1.5s ease 1 forwards;}
-.sanandres {animation: aparecer .5s 5s ease 1 forwards;}
-.riobravo {animation: aparecer .2s 9.5s ease 1 forwards;} */
-.darien {
-  animation: parpadear 3s 1.5s infinite; }
-
-.sanandres {
-  animation: parpadear 3s 4.5s infinite; }
-
-.riobravo {
-  animation: parpadear 3s 10.5s  infinite; }
-
-@keyframes marcar_punto {
-  0% {
-    transform: scale(0); }
-  100% {
-    transform: scale(1); } }
-
-.cls-8 {
-  fill: #0c4ed3;
-  opacity: 0;
-  animation: aparecer 2s 13.5s ease 2 forwards; }
-
-.cls-6, .cls-10 {
-  stroke: #fff;
-  stroke-miterlimit: 10;
-  stroke-width: 4px; }
-
-/* flechas */
-.cls-10 {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600; }
-
-.f1 {
-  animation: migrar 1s 0s ease 1 forwards; }
-
-.p1 {
-  animation: migrar 1s 1s ease 1 forwards; }
-
-.f2 {
-  animation: migrar 1s 3s ease 1 forwards; }
-
-.p2 {
-  animation: migrar 1s 4s ease 1 forwards; }
-
-.f3 {
-  animation: migrar 1s 3s ease 1 forwards; }
-
-.p3 {
-  animation: migrar 1s 4s ease 1 forwards; }
-
-.f4 {
-  animation: migrar 1s 6s ease 1 forwards; }
-
-.p4 {
-  animation: migrar 1s 6.5s ease 1 forwards; }
-
-.f5 {
-  animation: migrar 1s 6s ease 1 forwards; }
-
-.p5 {
-  animation: migrar 1s 6.5s ease 1 forwards; }
-
-.f6 {
-  animation: migrar 1s 7s ease 1 forwards; }
-
-.p6 {
-  animation: migrar 1s 7.5s ease 1 forwards; }
-
-.f7 {
-  animation: migrar 1s 8s ease 1 forwards; }
-
-.p7 {
-  animation: migrar 1s 8.5s ease 1 forwards; }
-
-.f8 {
-  animation: migrar 1s 11s ease 1 forwards; }
-
-.p8 {
-  animation: migrar 1s 11.5s ease 1 forwards; }
-
-.f9 {
-  animation: migrar 1s 12s ease 1 forwards; }
-
-.p9 {
-  animation: migrar 1s 12.5s ease 1 forwards; }
-
-@keyframes migrar {
-  to {
-    stroke-dashoffset: 400; } }
-
-.cls-11 {
-  mix-blend-mode: multiply; }
-
-.cls-10 {
-  fill: none;
-  stroke-linecap: round; }
-
-.cls-8, .cls-12 {
-  fill-rule: evenodd; }
-
-.cls-12 {
-  fill: #d6fa48;
-  opacity: 0; }
-
-.cls-2 {
-  fill: #0048d8;
-  opacity: 0; }
-
-.cls-3 {
-  fill: #d8fc3f;
-  opacity: 0; }
-
-.cls-7 {
-  fill: #0c4ed3;
-  opacity: 0; }
-
-.svg {
-  background-color: #18a477; }
