@@ -22,6 +22,39 @@ ul {
     list-style-type: none;
 }
 
+footer p {
+  color: #fff;
+  text-align: center;
+  margin: 1em auto 1em auto;
+  font-family: 'leyenda', sans-serif;
+  font-size: 0.8em;
+}
+
+.footer
+{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 3em 0 3em 0;
+
+    &__logo
+    {
+        width: 15%;
+        margin: 1em;
+
+        &-img
+        {
+            width: 100%; 
+        }
+       
+    }
+}
+
+
 .mouse-scroll {
     display: block;
   }
@@ -116,4 +149,6 @@ ul {
       opacity: 1;
     }
   }
+  
+
   

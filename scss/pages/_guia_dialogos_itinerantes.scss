@@ -59,7 +59,7 @@ i {
     height: 100%;
     z-index: -1;
     opacity: 0.1;
-    background-image: url("/assets/guia/005_A_la\ sala\ de\ puentes.svg"), url("/assets/guia/005_B_la\ sala\ de\ puentes.svg"), url("/assets/guia/006_B_la\ sala\ de\ puentes.svg");
+    background-image: url("../assets/guia/005_A_la\ sala\ de\ puentes.svg"), url("../assets/guia/005_B_la\ sala\ de\ puentes.svg"), url("../assets/guia/006_B_la\ sala\ de\ puentes.svg");
     background-repeat: repeat;
     background-size: 130%;
     background-position: top right;
@@ -148,7 +148,7 @@ i {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url("/assets/guia/Encarni_Pindado_30.jpg");
+    background-image: url("../assets/guia/Encarni_Pindado_30.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -162,7 +162,7 @@ i {
         left: 0;
         height: 100%;
         width: 100%;    
-        background-image: url("/assets/guia/grullas_verdes.svg");
+        background-image: url("../assets/guia/grullas_verdes.svg");
         background-size: 50%;
         opacity: 0.5;
         background-repeat: no-repeat;
@@ -186,6 +186,7 @@ i {
         .credito {
             background-color: #fff;
             color: #000;
+            display: inline-block;
         }
     }
 
@@ -320,7 +321,7 @@ i {
     height: 100%;
     z-index: -1;
     opacity: 0.1;
-    background-image: url("/assets/guia/Mapa_LATAM.svg"), url("/assets/guia/nube_azul_pix.svg");
+    background-image: url("../assets/guia/Mapa_LATAM.svg"), url("../assets/guia/nube_azul_pix.svg");
     background-repeat: repeat;
     background-size: 100%, 50%;
     background-position: top right;
@@ -409,7 +410,7 @@ width: 100%;
 height: 100%;
 z-index: -1;
 opacity: 0.2;
-background-image: url("/assets/guia/hojas_A.png");
+background-image: url("../assets/guia/hojas_A.png");
 background-repeat: repeat;
 background-size: 50%;
 background-position: top right;
@@ -511,7 +512,7 @@ margin-right: 0.5em;
 {
    grid-area: contenido;
   // background-image: url("/assets/guia/Mapa-LATAM-fondo.jpg");
-  background-image: url("/assets/guia/006_B_la\ sala\ de\ puentes.svg"), url("/assets/guia/005_A_la\ sala\ de\ puentes.svg");
+  background-image: url("../assets/guia/006_B_la\ sala\ de\ puentes.svg"), url("../assets/guia/005_A_la\ sala\ de\ puentes.svg");
    background-size:auto;
    background-position: top;
    background-repeat: repeat;
@@ -588,8 +589,17 @@ margin-right: 0.5em;
         border: 10px solid #0041DB;
     }
 
+/* -------------------------------------------- */
+/* ------------ footer ------------------- */
+/* -------------------------------------------- */
 
-
+footer p {
+    color: #fff;
+    text-align: center;
+    margin: 1em auto 1em auto;
+    font-family: 'leyenda', sans-serif;
+    font-size: 0.8em;
+}
 
 @media (max-width: 1000px)
 {
