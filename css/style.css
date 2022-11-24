@@ -296,21 +296,6 @@ h2 {
       font-family: 'leyenda', sans-serif;
       font-size: 0.8em; }
 
-.footer {
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 3em 0 3em 0; }
-  .footer__logo {
-    width: 15%;
-    margin: 1em; }
-    .footer__logo-img {
-      width: 100%; }
-
 .trazo_sur {
   stroke: #d6fa48; }
 
@@ -978,6 +963,9 @@ i {
     margin: 0;
     padding: 0; }
   .descargar__guia small {
+    display: block;
+    width: 100%;
+    text-align: center;
     margin: 5px 0;
     color: #0048d8; }
 
@@ -1000,8 +988,7 @@ i {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-repeat: no-repeat; }
   .fotografia__grullas {
     position: absolute;
     bottom: 0;
@@ -1259,10 +1246,10 @@ i {
 .migranteschat__chat {
   grid-area: contenido;
   background-image: url("../assets/guia/006_B_la sala de puentes.svg"), url("../assets/guia/005_A_la sala de puentes.svg");
-  background-size: auto;
-  background-position: top;
+  background-size: 80%, 80%;
+  background-position: top right;
   background-repeat: repeat;
-  background-color: #f1efec;
+  background-color: #efeae2;
   margin: 5px 40px;
   overflow-y: scroll;
   display: flex;
@@ -1336,16 +1323,6 @@ i {
 .migranteschat__noti-link:hover img {
   border: 10px solid #0041DB; }
 
-/* -------------------------------------------- */
-/* ------------ footer ------------------- */
-/* -------------------------------------------- */
-footer p {
-  color: #fff;
-  text-align: center;
-  margin: 1em auto 1em auto;
-  font-family: 'leyenda', sans-serif;
-  font-size: 0.8em; }
-
 @media (max-width: 1000px) {
   .migranteschat {
     grid-template-columns: 10% auto 10%; } }
@@ -1405,9 +1382,11 @@ footer p {
     line-height: 1.3; }
   .migranteschat__noti {
     width: 85%; }
-  .fotografia__grullas {
-    bottom: -50px;
-    height: 60%; } }
+  .fotografia {
+    background-attachment: inherit; }
+    .fotografia__grullas {
+      bottom: -50px;
+      height: 60%; } }
 
 @media (max-width: 300px) {
   .migranteschat-encab {

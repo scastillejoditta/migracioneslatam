@@ -122,6 +122,9 @@ i {
 
     small
     {
+        display: block;
+        width: 100%;
+        text-align: center;
         margin: 5px 0;
         color: $azul_guia;
     }
@@ -153,7 +156,6 @@ i {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 
     &__grullas
     {
@@ -513,10 +515,10 @@ margin-right: 0.5em;
    grid-area: contenido;
   // background-image: url("/assets/guia/Mapa-LATAM-fondo.jpg");
   background-image: url("../assets/guia/006_B_la\ sala\ de\ puentes.svg"), url("../assets/guia/005_A_la\ sala\ de\ puentes.svg");
-   background-size:auto;
-   background-position: top;
+   background-size: 80%, 80%;//auto;
+   background-position: top right;
    background-repeat: repeat;
-   background-color: #f1efec; //efeae2; //#f5f7f8;
+   background-color: #efeae2; //efeae2; //#f1efec;
    margin: 5px 40px;
    overflow-y: scroll;
    display: flex;
@@ -708,11 +710,15 @@ margin-right: 0.5em;
     .migranteschat__noti
     { width: 85%;}
 
-    .fotografia__grullas
-        {
-            bottom: -50px;
-            height: 60%;
-        }
+    .fotografia
+    {
+        background-attachment: inherit;
+            &__grullas
+            {
+                bottom: -50px;
+                height: 60%;
+            }
+    }
 }
 
 @media (max-width: 300px)
