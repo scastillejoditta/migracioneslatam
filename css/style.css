@@ -859,6 +859,9 @@ h2 {
   .footer__logo {
     width: 40%; } }
 
+main {
+  background-color: #727cb2; }
+
 p {
   font-family: 'texto', sans-serif;
   margin-bottom: 1em;
@@ -1022,15 +1025,17 @@ i {
   position: relative;
   min-width: 100%;
   min-height: 100vh;
-  padding: 40px 6em;
+  padding-bottom: 8em;
   z-index: 2;
   background-color: #727cb2; }
   .articulos p {
     color: #fff; }
   .articulos__texto {
     width: 50%;
-    padding-top: 2em;
-    margin: 2em auto 4em auto; }
+    padding-top: 4em;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto; }
     .articulos__texto h2 {
       font-family: 'titulos', sans-serif;
       font-size: 3.8em;
@@ -1045,7 +1050,7 @@ i {
       letter-spacing: 2px; }
   .articulos__acordion {
     width: 80%;
-    margin-top: 7em;
+    margin-top: 5em;
     margin-left: auto;
     margin-right: auto; }
     .articulos__acordion li {
@@ -1099,7 +1104,7 @@ i {
         .articulos__acordion li .texto .cargo, .articulos__acordion li .texto .autor, .articulos__acordion li .texto .país {
           color: #fff; }
       .articulos__acordion li:hover {
-        transform: translateX(-50px);
+        transform: translateX(-30px);
         background-color: #fff; }
       .articulos__acordion li:hover .foto {
         border-right: solid 10px #0048d8; }
@@ -1443,25 +1448,27 @@ i {
   .migranteschat {
     grid-template-columns: 10% auto 10%; }
   .articulos__acordion {
-    width: 100%; } }
+    width: 90%; } }
 
 @media (max-width: 970px) {
   .intro__texto, .tertulias__texto, .sverde__texto, .articulos__texto {
     width: 80%; } }
 
 @media (max-width: 850px) {
-  .articulos__acordion li {
-    width: 95%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 30em; }
-    .articulos__acordion li .foto {
+  .articulos__acordion {
+    margin-right: 1em; }
+    .articulos__acordion li {
       width: 100%;
-      height: 60%; }
-    .articulos__acordion li .texto {
-      width: 100%;
-      height: 40%; } }
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 30em; }
+      .articulos__acordion li .foto {
+        width: 100%;
+        height: 60%; }
+      .articulos__acordion li .texto {
+        width: 100%;
+        height: 40%; } }
 
 @media (max-width: 730px) {
   .intro__texto, .tertulias__texto, .sverde__texto, .articulos__texto, .tertulias__charlas li {
@@ -1489,17 +1496,6 @@ i {
   .migranteschat__chat {
     margin: 5px; } }
 
-@media (max-width: 670px) {
-  .articulos__acordion {
-    width: 95%; }
-    .articulos__acordion li {
-      height: 30em;
-      width: 100%; }
-      .articulos__acordion li .foto {
-        height: 40%; }
-      .articulos__acordion li .texto {
-        height: 60%; } }
-
 @media (max-width: 570px) {
   #btn_guia {
     bottom: 5%;
@@ -1517,10 +1513,8 @@ i {
         margin-bottom: 1em; } }
 
 @media (max-width: 545px) {
-  .articulos__acordion {
-    width: 100%; }
-    .articulos__acordion li {
-      height: 32em; } }
+  .articulos__acordion li {
+    height: 32em; } }
 
 @media (max-width: 485px) {
   .migranteschat-encab {

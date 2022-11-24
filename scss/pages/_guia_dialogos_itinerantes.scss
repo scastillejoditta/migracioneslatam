@@ -1,3 +1,8 @@
+main
+{
+    background-color: #727cb2;
+}
+
 p
 {
     font-family: 'texto', sans-serif;
@@ -203,7 +208,7 @@ i {
     position: relative;
     min-width:100%;
     min-height: 100vh;
-    padding: 40px 6em;
+    padding-bottom: 8em;
     z-index: 2;
     background-color: #727cb2;
     
@@ -215,8 +220,10 @@ i {
     &__texto
      {
          width: 50%;
-         padding-top: 2em;
-         margin: 2em auto 4em auto;
+         padding-top: 4em;
+         margin-top: 2em;
+         margin-left: auto; 
+         margin-right: auto;
 
          h2 {
             font-family: 'titulos', sans-serif;
@@ -238,7 +245,7 @@ i {
 
      &__acordion {
             width: 80%;
-            margin-top: 7em;
+            margin-top: 5em;
             margin-left: auto;
             margin-right: auto;
           
@@ -317,7 +324,7 @@ i {
                 }
                 
                 &:hover {
-                    transform: translateX(-50px);
+                    transform: translateX(-30px);
                     background-color: #fff;
                 }
                 &:hover .foto {
@@ -775,7 +782,7 @@ margin-right: 0.5em;
 
         .articulos__acordion
         {
-            width:100%;
+            width:90%;
         }
 }
 
@@ -790,24 +797,28 @@ margin-right: 0.5em;
 
 @media (max-width: 850px)
 {
-    .articulos__acordion li
+    .articulos__acordion 
     {
-        width:95%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 30em;
-        
-        .foto
+        margin-right: 1em;
+        li
         {
-            width: 100%;
-            height: 60%;
-        }
+            width:100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 30em;
+            
+            .foto
+            {
+                width: 100%;
+                height: 60%;
+            }
 
-        .texto
-        {
-            width: 100%;
-            height: 40%;
+            .texto
+            {
+                width: 100%;
+                height: 40%;
+            }
         }
     }
 }
@@ -860,29 +871,6 @@ margin-right: 0.5em;
         { margin: 5px; }
 }
 
-@media (max-width: 670px)
-{
-    .articulos__acordion 
-        {
-            width:95%;
-
-            li {
-                height: 30em;
-                width:100%;
-
-                .foto
-                {
-                    height: 40%;
-                }
-
-                .texto
-                {
-                    height: 60%;
-                }
-            }
-        }
-}
-
 @media (max-width: 570px)
 {
 
@@ -922,8 +910,6 @@ margin-right: 0.5em;
 {
     .articulos__acordion 
     {
-        width:100%;
-
         li {
             height: 32em;
         }
