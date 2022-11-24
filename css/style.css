@@ -988,7 +988,8 @@ i {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
   .fotografia__grullas {
     position: absolute;
     bottom: 0;
@@ -1013,6 +1014,118 @@ i {
       background-color: #fff;
       color: #000;
       display: inline-block; }
+
+/* -------------------------------------------- */
+/* ------------ Artículos ------------------- */
+/* -------------------------------------------- */
+.articulos {
+  position: relative;
+  min-width: 100%;
+  min-height: 100vh;
+  padding: 40px 6em;
+  z-index: 2;
+  background-color: #727cb2; }
+  .articulos p {
+    color: #fff; }
+  .articulos__texto {
+    width: 50%;
+    padding-top: 2em;
+    margin: 2em auto 4em auto; }
+    .articulos__texto h2 {
+      font-family: 'titulos', sans-serif;
+      font-size: 3.8em;
+      margin-bottom: 1em;
+      margin-top: 0;
+      text-align: center;
+      color: #d6fa48; }
+    .articulos__texto small {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1em;
+      letter-spacing: 2px; }
+  .articulos__acordion {
+    width: 80%;
+    margin-top: 7em;
+    margin-left: auto;
+    margin-right: auto; }
+    .articulos__acordion li {
+      width: 100%;
+      height: 18em;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 3em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .8s; }
+      .articulos__acordion li .foto {
+        position: relative;
+        display: block;
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center; }
+        .articulos__acordion li .foto small {
+          position: absolute;
+          bottom: 10px;
+          left: 70px;
+          display: inline-block;
+          background-color: #fff;
+          color: #0048d8;
+          padding-bottom: 3px; }
+      .articulos__acordion li .col_1 {
+        background-image: url("../assets/guia/trompo.svg"), url("../assets/guia/Estrategias-para-hackear-el-espectaculo-fronterizo-del-corredor-migratorio-centroamerica-mexico-estados-unidos.jpg");
+        background-repeat: no-repeat;
+        background-size: 30%, 90%;
+        background-position: bottom left, top right; }
+      .articulos__acordion li .col_2 {
+        background-image: url("../assets/guia/trompo.svg"), url("../assets/guia/La-migracion-que-recorre-nuestras-venas-y-se-conecta-con-el-corazon.jpg");
+        background-repeat: no-repeat;
+        background-size: 30%, 90%;
+        background-position: bottom left, top right; }
+      .articulos__acordion li .texto {
+        width: 50%;
+        text-align: left; }
+        .articulos__acordion li .texto h3 {
+          color: #d6fa48;
+          letter-spacing: 1px;
+          margin-bottom: 0.5em; }
+        .articulos__acordion li .texto p {
+          line-height: 120%; }
+        .articulos__acordion li .texto .cargo, .articulos__acordion li .texto .autor, .articulos__acordion li .texto .país {
+          color: #fff; }
+      .articulos__acordion li:hover {
+        transform: translateX(-50px);
+        background-color: #fff; }
+      .articulos__acordion li:hover .foto {
+        border-right: solid 10px #0048d8; }
+        .articulos__acordion li:hover .foto small {
+          background-color: #d6fa48; }
+      .articulos__acordion li:hover h3 {
+        color: #0048d8; }
+      .articulos__acordion li:hover .cargo,
+      .articulos__acordion li:hover .autor,
+      .articulos__acordion li:hover .país, .articulos__acordion li:hover p {
+        color: #000; }
+
+.articulos:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+  background-image: url("../assets/guia/flor_verde.svg"), url("../assets/guia/pie_flor.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50%, 50%;
+  background-position: top left, bottom right; }
 
 /* -------------------------------------------- */
 /* ------------- tertulias -------------------- */
@@ -1206,13 +1319,13 @@ i {
 .migranteschat {
   margin-top: 10px;
   min-width: 100%;
-  background-color: #f0f2f5;
+  background-color: #18a477;
   display: grid;
   grid-template-areas: ". encabezado ."  ". contenido ." ". pie .";
   grid-template-columns: 20% auto 20%; }
 
 .migranteschat-encab {
-  background-color: #f0f2f5;
+  background-color: #18a477;
   grid-area: encabezado;
   padding: 5px 40px;
   display: flex;
@@ -1227,29 +1340,32 @@ i {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: solid 1px #0041DB;
+  border: solid 2px #d6fa48;
   background-color: #fff; }
 
 .migranteschat-encab p {
   margin-bottom: 0; }
 
 .migranteschat-encab p:nth-child(1) {
-  font-weight: bold;
+  font-family: 'texto', sans-serif;
   font-size: 1.3em;
-  color: #0041DB; }
+  color: #fff;
+  margin-top: 0.3em;
+  line-height: 100%; }
 
 .migranteschat-encab p:nth-child(2) {
-  font-weight: lighter;
+  font-family: 'leyenda', sans-serif;
   font-size: 1em;
-  color: #54656f; }
+  color: #d6fa48;
+  margin-top: 0; }
 
 .migranteschat__chat {
   grid-area: contenido;
-  background-image: url("../assets/guia/006_B_la sala de puentes.svg"), url("../assets/guia/005_A_la sala de puentes.svg");
-  background-size: 80%, 80%;
-  background-position: top right;
+  background-image: url("../assets/guia/Mapa-LATAM.png");
+  background-size: auto;
+  background-position: top center;
   background-repeat: repeat;
-  background-color: #efeae2;
+  background-color: #e1e1de;
   margin: 5px 40px;
   overflow-y: scroll;
   display: flex;
@@ -1325,14 +1441,30 @@ i {
 
 @media (max-width: 1000px) {
   .migranteschat {
-    grid-template-columns: 10% auto 10%; } }
+    grid-template-columns: 10% auto 10%; }
+  .articulos__acordion {
+    width: 100%; } }
 
 @media (max-width: 970px) {
-  .intro__texto, .tertulias__texto, .sverde__texto {
+  .intro__texto, .tertulias__texto, .sverde__texto, .articulos__texto {
     width: 80%; } }
 
+@media (max-width: 850px) {
+  .articulos__acordion li {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 30em; }
+    .articulos__acordion li .foto {
+      width: 100%;
+      height: 60%; }
+    .articulos__acordion li .texto {
+      width: 100%;
+      height: 40%; } }
+
 @media (max-width: 730px) {
-  .intro__texto, .tertulias__texto, .sverde__texto, .tertulias__charlas li {
+  .intro__texto, .tertulias__texto, .sverde__texto, .articulos__texto, .tertulias__charlas li {
     width: 95%; }
   .tres_datos {
     flex-wrap: wrap; }
@@ -1357,6 +1489,17 @@ i {
   .migranteschat__chat {
     margin: 5px; } }
 
+@media (max-width: 670px) {
+  .articulos__acordion {
+    width: 95%; }
+    .articulos__acordion li {
+      height: 30em;
+      width: 100%; }
+      .articulos__acordion li .foto {
+        height: 40%; }
+      .articulos__acordion li .texto {
+        height: 60%; } }
+
 @media (max-width: 570px) {
   #btn_guia {
     bottom: 5%;
@@ -1372,6 +1515,12 @@ i {
       .tertulias__charlas li {
         width: 100%;
         margin-bottom: 1em; } }
+
+@media (max-width: 545px) {
+  .articulos__acordion {
+    width: 100%; }
+    .articulos__acordion li {
+      height: 32em; } }
 
 @media (max-width: 485px) {
   .migranteschat-encab {
