@@ -1,4 +1,4 @@
-body
+.cobertura_content
 {
     background: rgb(26,11,129);
     background: -moz-radial-gradient(circle, rgba(26,11,129,1) 0%, rgba(0,10,41,1) 100%);
@@ -29,19 +29,15 @@ h2
     // .header__content
     &__content 
     {
-        //position: relative;
-        //text-align: center;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-flow: row nowrap;
         height: 80px;
-        // .header__content-logo
+
         &-logo 
         { 
-        //    position: absolute;
-        //    left: 20px;
-         //   top: 15px;
             width: 160px; 
         }
 
@@ -160,12 +156,20 @@ h2
         width: 50%;
         top: 31%;
         left: 20px;
+        
+        small {
+            color:$azul;
+            font-weight: bold;
+            font-size: 1em;
+            letter-spacing: 2px;
+        }
 
         h1 {
             font-family: 'titulos', sans-serif;
-            font-size: 2em;
+            font-size: 3.4em;
+            letter-spacing: 1px;
             margin: 0 auto 0.5em auto;
-            color: $blanco_texto;
+            color: $azul;
         }
 
         p
@@ -178,7 +182,7 @@ h2
             
             b
             { 
-                color: $verde_azul;
+             //   color: $verde_azul;
             }
         }
 
@@ -187,8 +191,26 @@ h2
             font-family: 'texto', sans-serif;
             display: inline-block;
             margin: 0.5em 20px 0.5em 0;
-            color: $limon;
+            color: $azul;
             font-size: 1.3em;
+        }
+
+        .btn_1 {
+            margin-top: 1em;
+            display: block;
+            width: 100px;
+            color: #fff;
+            border: solid 1px #fff;
+            border-radius: 6px;
+            font-family: 'leyenda', sans-serif;
+            font-size: 1em;
+            padding: 3px 20px 5px 20px;
+        
+            &:hover
+            {
+                background-color: $azul;
+                border-color: $azul;
+            }
         }
 
         div {margin: 0.5em auto 0.5em 1em; position: relative;}
@@ -203,7 +225,7 @@ h2
                 -webkit-appearance: none;
                 outline: none;
                 vertical-align: bottom;
-                
+
                 &:hover 
                 {
                     border: 1.4px solid #fff;
@@ -617,8 +639,9 @@ h2
     
 .news
     {
-      
+      position: relative;
         margin: 3em auto 0 auto;
+        padding-bottom: 8em;
 
         &__head
         {
@@ -630,6 +653,24 @@ h2
             max-width: 1200px;
             margin: 0 auto 0 auto;
 
+            small {
+                color:$azul;
+                font-weight: bold;
+                font-size: 1em;
+                letter-spacing: 2px;
+            }
+
+            h2 
+            {
+                font-family: 'titulos', sans-serif;
+                font-size: 3.4em;
+                letter-spacing: 1px;
+                color: $azul;
+                margin-top: 0;
+                margin-bottom: 1em;
+                text-align: center;
+            }
+
             p
             {
                 font-family: 'leyenda', sans-serif;
@@ -637,21 +678,33 @@ h2
                 line-height: 150%;
                 color: $blanco_texto;
                 width: 85%;
-                margin: 1em auto 0.5em auto;
+                margin: 1em auto 2em auto;
             }
 
             span 
             {
                 margin: 0;
                 color: $limon;
+                margin-bottom: 0.5em;
             }
+
+            a 
+            {
+                color: #fff;
+                border-bottom: solid 2px $azul;
+                &:hover
+                {
+                 border-bottom: solid 2px $limon;   
+                }
+            }
+            
             &-filtro
             {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
-                margin: 20px 0 20px 0;
+                margin: 20px 0 2em 0;
                 gap: 10px;
                 
                 &-btn
@@ -689,7 +742,8 @@ h2
 
         &__content
         {
-            width: 75%;
+            width: 100%;
+            max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
 
@@ -697,8 +751,8 @@ h2
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                gap: 20px;
-                justify-content: center;
+                //gap: 20px;
+                justify-content: space-evenly;
                 margin-bottom: 5em;
             
                 li {
@@ -710,13 +764,30 @@ h2
         }
 }
 
+.news:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    background-image: url("/assets/guia/nube_azul_pix_peq.svg"), url("/assets/guia/nube_azul_pix.svg");
+    background-repeat: repeat-y;
+    background-size: 50%, 50%;
+    background-position: top right, top left;
+}
+
 .card 
 {
     background-color: transparent;
     border-radius: 0;
     border: none;
     padding-left: 0;
-    width: 17em;
+    width: 17.3em;//17em;
+    margin-top:2em;
 
     img 
     {
@@ -796,28 +867,20 @@ h2
     }
 }
 
-.btn_1 {
-    display: block;
-    width: 100px;
-    color: #fff;
-    background-color: $verde_claro;
-    border: none;
-    border-radius: 6px;
-    font-family: 'leyenda', sans-serif;
-    font-size: 1em;
-    padding: 3px 10px 4px 20px;
 
-    &:hover
-    {
-        background-color: $verde_claro;
-        color: $limon;
-    }
-}
 
 @each $nota, $foto in $notas 
 {
     .image#{$nota} {
         background: $foto no-repeat;  
+    }
+}
+
+@media (max-width: 845px)
+{
+    .news__head-filtro
+    {
+        width: 80%;
     }
 }
 
@@ -853,6 +916,13 @@ h2
     {
         width: 100%;
     }
+    
+    .news:before {
+        background-image: url("/assets/guia/nube_azul_pix.svg");
+        background-repeat: repeat-y;
+        background-size: 80%;
+        background-position: top left;
+    }
 }
 
 @media (max-width: 700px)
@@ -887,4 +957,18 @@ h2
     {
         width: 40%;
     }
+}
+
+@media (max-width: 509px)
+{
+    .news__head-filtro
+    {
+        width: 100%;
+    }
+
+    .news:before {
+        background-size: 150%;
+        background-position: top left;
+    }
+
 }

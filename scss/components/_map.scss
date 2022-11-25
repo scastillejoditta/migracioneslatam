@@ -294,7 +294,17 @@
   fill-rule: evenodd;
 }
 
-.Labels_otrospaises, .RutaNorte, #dvFlor, .RutaSur  {opacity: 0;}
+.RutaNorte, .RutaSur  {opacity: 0;}
+
+#dvFlor
+{
+  transform:translate(-190px,1850px);
+}
+
+.Labels_Aruba
+{
+  transform:translate(10px,15px);
+}
 
 .Labels_Chile {
   transform:translate(-50px,-205px);
