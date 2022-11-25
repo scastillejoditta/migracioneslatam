@@ -774,7 +774,7 @@ h2
     height: 100%;
     z-index: -1;
     opacity: 0.2;
-    background-image: url("/assets/guia/nube_azul_pix_peq.svg"), url("/assets/guia/nube_azul_pix.svg");
+    background-image: url("../assets/guia/nube_azul_pix_peq.svg"), url("../assets/guia/nube_azul_pix.svg");
     background-repeat: repeat-y;
     background-size: 50%, 50%;
     background-position: top right, top left;
@@ -905,8 +905,11 @@ h2
     }
 
     #dvConvenciones {
-        transform: translate(-1500px,400px);
         scale:250%;
+        transform: scale(250%);
+        transform: translate(-78%,15%);
+        //transform: translate(-1500px,400px);
+        //scale:250%;
     }
 }
 
@@ -918,7 +921,7 @@ h2
     }
     
     .news:before {
-        background-image: url("/assets/guia/nube_azul_pix.svg");
+        background-image: url("../assets/guia/nube_azul_pix.svg");
         background-repeat: repeat-y;
         background-size: 80%;
         background-position: top left;
