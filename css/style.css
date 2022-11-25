@@ -880,7 +880,7 @@ h2 {
       position: inherit;
       width: 90%; }
   #dvConvenciones {
-    transform: scale(250%) translate(-78%, 15%); } }
+    transform: translate(-195%, 35%) scale(2.5); } }
 
 @media (max-width: 769px) {
   .news__content {
@@ -1873,7 +1873,7 @@ i {
   transform: translate(1px, -1px); }
 
 #cMar {
-  transform: scale(54%) translate(1710px, -260px); }
+  transform: translate(48%, -5%) scale(0.54); }
 
 .delgada {
   font-family: 'leyenda', sans-serif;
