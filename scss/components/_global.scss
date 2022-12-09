@@ -54,6 +54,58 @@ footer p {
     }
 }
 
+.navbar-nav
+{
+  font-family: 'leyenda', sans-serif;
+  text-transform: uppercase;
+   
+
+  .nav-item
+  { 
+      font-size: 1em;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      
+      transition: border-bottom .3s linear;
+
+      a
+      {
+        color: black;
+        border-bottom: 4px #fff solid;
+
+          &:hover {
+            //background-color: $limon;
+            color: $azul_guia; 
+            border-bottom: 4px $azul_guia solid;
+        }
+      } 
+
+  }
+
+  .dropdown-item
+  {
+        font-size: 0.9em;
+        &:hover {
+          background-color: $limon;
+          color: $azul_guia;
+        }
+  }
+
+  .nav-item:nth-child(1) a {
+    padding: 5px 10px;
+    background-color: $limon;
+    border: solid $azul_guia 1.3px;
+    color: $azul_guia;
+   
+    &:hover 
+    {
+      font-family: 'titulos', sans-serif;
+      border: solid $azul_guia 1.5px; 
+    }
+  }
+
+}
 
 .mouse-scroll {
     display: block;

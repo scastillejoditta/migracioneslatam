@@ -1,6 +1,6 @@
 .cobertura_content
 {
-    background: rgb(26,11,129);
+    background: rgb(26, 11, 129);
     background: -moz-radial-gradient(circle, rgba(26,11,129,1) 0%, rgba(0,10,41,1) 100%);
     background: -webkit-radial-gradient(circle, rgba(26,11,129,1) 0%, rgba(0,10,41,1) 100%);
     background: radial-gradient(circle, rgba(26,11,129,1) 0%, rgba(0,10,41,1) 100%);
@@ -134,7 +134,7 @@ h2
 
 
 
-.container
+.contenedor
 {
     position: relative;
     padding: 0;
@@ -180,10 +180,6 @@ h2
             margin-bottom: 0.5em;
             color: $blanco_texto;
             
-            b
-            { 
-             //   color: $verde_azul;
-            }
         }
 
         span 
@@ -886,7 +882,7 @@ h2
 
 @media (max-width: 822px)
 {
-    .container
+    .contenedor
     {
         position: inherit;
         display: flex;
