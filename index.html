@@ -40,7 +40,7 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
 
         <!-- mio -->
         <link rel="stylesheet" href="./css/style.css"/>
@@ -48,18 +48,26 @@
 </head>
 <body class="cobertura_content">
   <header class="header">
-    <div class="header__content">
-        <a href="index.html" >
-            <img src="assets/images/Logo_PuentesdeComunicacion_2022.png" alt="Puentes de Comunicación" class="header__content-logo" />
-        </a>
+    <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container-fluid">
 
-        <nav class="navbar navbar-expand-lg bg-white">
-          <div class="contenedor-fluid">
+            <a class="navbar-brand" href="index.html" >
+              <img src="assets/images/Logo_PuentesdeComunicacion_2022.png" alt="Puentes de Comunicación" />
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <svg id="btn_mobile" height="40" version="1.1" width="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                <g>
+                <path class="mLine" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="M5.0916789,20.818994C5.0916789,20.818994,58.908321,20.818994,58.908321,20.818994"></path>
+                <path class="mLine" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="m 5.1969746,31.909063 53.8166424,0"></path>
+                <path class="mLine" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="M5.0916788,42.95698C5.0916788,42.95698,58.908321,42.95698,58.908321,42.95698"></path>
+                </g>
+              </svg>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">     
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="https://puentesdecomunicacion.org/dialogos-itinerantes/">Diálogos</a>
                 </li>
@@ -120,35 +128,9 @@
                 </li>
               </ul>
             </div>
+
           </div>
-        </nav>
-
-    <!-- Menu anterior 
-        <nav>
-            <ul class="header__content-navbar">
-                <li><a href="https://puentesdecomunicacion.org/">INICIO</a>
-                </li>
-                <li><a href="pages/guia_dialogos_itinerantes.html">GUÍA 2022</a></li>
-                <li><a href="https://puentesdecomunicacion.org/dialogos-itinerantes/">DIÁLOGOS</a></li>
-            </ul>
-        </nav>
-        <svg id="btn_mobile" class="header__content-mobile" height="64" version="1.1" width="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-          <g>
-          <path class="mLine" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="M5.0916789,20.818994C5.0916789,20.818994,58.908321,20.818994,58.908321,20.818994"></path>
-          <path class="mLine" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="m 5.1969746,31.909063 53.8166424,0"></path>
-          <path class="mLine" fill="none" stroke="#000" stroke-width="5" stroke-linejoin="bevel" d="M5.0916788,42.95698C5.0916788,42.95698,58.908321,42.95698,58.908321,42.95698"></path>
-          </g>
-        </svg>
-    </div>
-    <nav id="nav_mobile" class="header__content-list">
-      <ul>
-          <li><a href="https://puentesdecomunicacion.org/">INICIO</a></li>
-          <li><a href="pages/guia_dialogos_itinerantes.html">GUÍA 2022</a></li>
-          <li><a href="https://puentesdecomunicacion.org/dialogos-itinerantes/">DIÁLOGOS</a></li>
-      </ul>
     </nav>
-    -->
-
 </header>
     
 <main>
@@ -2521,7 +2503,9 @@
   </footer>
       <!-- mio -->
   <script src="./scripts/mapa.js"></script>
-      <!--  menú anterior <script src="./scripts/menu.js"></script> -->
+
+  <!--  menú anterior <script src="./scripts/menu.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 </html>
